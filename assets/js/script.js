@@ -3,27 +3,39 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
-    
+
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "submit") {
                 alert("You clicked submit!");
             } else {
                 let gameType = this.getAttribute("data-type");
-                alert(`You clicked ${gameType}`);
+                runGame(gameType);
             }
         });
     }
+
+    runGame("addition");
+
 });
 
 /**
  * This main game loop is called when script is loaded
  *and after the answer is processed.
  */
-// num1 and num2 creates two random numbers between 1 and 25
-function runGame() {
-    let num1 = Math.floor(Math.random() * 25 ) + 1;
-    let num2 = Math.floor(Math.random() * 25 ) + 1;
+
+function runGame(gameType) {
+    // num1 and num2 creates two random numbers between 1 and 25
+    let num1 = Math.floor(Math.random() * 25) + 1;
+    let num2 = Math.floor(Math.random() * 25) + 1;
+
+    if (gameType === "addition") {
+        dispAddQuestion(num1, num2);
+    } else {
+        alert(`Something amiss: ${gameType}`);
+        throw `Something amiss: ${gameType}. Aborting`;
+    }
+
 }
 
 function verifyAnswer() {
@@ -43,6 +55,10 @@ function incrementWrongAnswer() {
 }
 
 function dispAddQuestion() {
+    
+    document.getElementById('operand1').textcontent = operand1;
+    document.getElementById('operand2').textcontent = operand2;
+    document.getElementById('operator').textcontent = "+";
 
 }
 
