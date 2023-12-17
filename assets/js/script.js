@@ -16,7 +16,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+/**
+ * This main game loop is called when script is loaded
+ *and after the answer is processed.
+ */
+// num1 and num2 creates two random numbers between 1 and 25
 function runGame() {
+    let num1 = Math.floor(Math.random() * 25 ) + 1;
+    let num2 = Math.floor(Math.random() * 25 ) + 1;
 }
 
 function verifyAnswer() {
