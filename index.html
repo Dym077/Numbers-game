@@ -9,7 +9,7 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Google font credit Jason Kottke-->
+    <!--Google font created by Jason Kottke-->
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
@@ -23,16 +23,16 @@
 
     <div class="game-section">
         <div class="controls-section">
-            <button class="button button--big button--yellow">
+            <button data-type="addition" class="button button--big button--yellow">
                 <i class="fas fa-plus"></i>
             </button>
-            <button class="button button--big button--green">
+            <button data-type="subtract" class="button button--big button--green">
                 <i class="fas fa-minus"></i>
             </button>
-            <button class="button button--big button--gray">
+            <button data-type="multiply" class="button button--big button--gray">
                 <i class="fas fa-times"></i>
             </button>
-            <button class="button button--big button--black">
+            <button data-type="divide" class="button button--big button--black">
                 <i class="fas fa-divide"></i>
             </button>
     
@@ -44,7 +44,7 @@
             <span>=</span>
             <p class="answer-mobile">Your Answer:</p>
             <input id="answer-box" type="number">
-            <button class="button button--gray">Submit!</button>
+            <button data-type="submit" class="button button--gray">Submit!</button>
         </div>
     </div>
     

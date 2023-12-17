@@ -1,5 +1,5 @@
 // Event listener - wait for the DOM to finish loading
-// Get button elements ans add listeners
+// Get button elements and add listeners
 
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
@@ -19,11 +19,11 @@ document.addEventListener("DOMContentLoaded", function() {
 function runGame() {
 }
 
-function verifyAnswer () {
+function verifyAnswer() {
 
 }
 
-function calcAnswer () {
+function calcAnswer() {
 
 }
 
@@ -31,21 +31,21 @@ function incrementScore() {
 
 }
 
-function incrementWrongAnswer () {
+function incrementWrongAnswer() {
 
 }
 
-function dispAddQuestion () {
+function dispAddQuestion() {
 
 }
 
-function dispSubQuestion () {
+function dispSubQuestion() {
 
 }
 
-function dispMultQuestion () {
+function dispMultQuestion() {
 
 }
-function dispDivQuestion () {
+function dispDivQuestion() {
 
 }
