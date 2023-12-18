@@ -43,6 +43,17 @@ function verifyAnswer() {
 }
 
 function calcAnswer() {
+    let operand1 = parseInt(document.getElementById('operand1').innertext);
+    let operand2 = parseInt(document.getElementById('operand2').innertext);
+    let operator = document.getElementById('operand2').innertext;
+
+    if (operator === "+") {
+        return [operand1 + operand2, "addition"];
+    } else {
+        alert(`operator not implemented)${operator}`);
+        throw `operator not implemented ${operator}. Aborting`;
+    }
+    }
 
 }
 
