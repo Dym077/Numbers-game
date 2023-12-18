@@ -37,7 +37,9 @@ function runGame(gameType) {
     }
 
 }
-
+/**
+ * Checks the user answer and returns a verification or the correct answer.
+ */
 function verifyAnswer() {
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calcAnswer();
@@ -45,9 +47,10 @@ function verifyAnswer() {
 
     if (isCorrect) {
         alert("You submitted the correct answer!");
+        incrementScore();
     } else {
         alert(`Your answer is ${userAnswer}. The correct answer should be ${calculatedAnswer[0]}!`);
-
+        incrementWrongAnswer();
     }
 
     runGame(calculatedAnswer[1]);
@@ -72,14 +75,22 @@ function calcAnswer() {
         throw `operator not implemented ${operator}. Aborting`;
     }
 }
-
+/**
+ * Get the current score from the DOM and increments it by 1.
+ */
 
 function incrementScore() {
 
+    let prevScore = parseInt(document.getElementById("score").innerText);
+document.getElementById("score").innerText = ++prevScore;
 }
+/**
+ * Get the current tally of the incorrect answers from the DOM and increments it by 1.
+ */
 
 function incrementWrongAnswer() {
-
+    let prevScore = parseInt(document.getElementById("wrong").innerText);
+    document.getElementById("wrong").innerText = ++prevScore;
 }
 
 function dispAddQuestion(operand1, operand2) {
