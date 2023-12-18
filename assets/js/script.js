@@ -33,13 +33,13 @@ function runGame(gameType) {
         dispAddQuestion(num1, num2);
     } else if (gameType === "multiply") {
         dispMultQuestion(num1, num2);
+    } else if (gameType === "subtract") {
+        dispSubQuestion(num1, num2);
     } else {
         alert(`Something amiss: ${gameType}`);
         throw `Something amiss: ${gameType}. Aborting`;
     }
-    if (gameType === "multiply") {
-        dispMultQuestion(num1, num2);
-}
+    
 }
 /**
  * Checks the user answer and returns a verification or the correct answer.
@@ -73,9 +73,11 @@ function calcAnswer() {
         let operator = document.getElementById('operator').innerText;
 
     if (operator === "+") {
-        return [operand1 * operand2, "multiply"];
+        return [operand1 + operand2, "addition"];
     } else if (operator === "x") {
-        return [operand1 + operand2, "multiply"];
+        return [operand1 * operand2, "multiply"];
+    } else if (operator === "-") {
+        return [operand1 - operand2, "subtract"];
     } else {
         alert(`operator not implemented)${operator}`);
         throw `operator not implemented ${operator}. Aborting`;
@@ -108,7 +110,11 @@ function dispAddQuestion(operand1, operand2) {
 
 }
 
-function dispSubQuestion() {
+function dispSubQuestion(operand1, operand2) {
+
+    document.getElementById('operand1').textContent = operand1 > operand2 ? operand1 : operand2;
+    document.getElementById('operand2').textContent = operand1 > operand2 ? operand2 : operand1;
+    document.getElementById('operator').textContent = "-";
 
 }
 
