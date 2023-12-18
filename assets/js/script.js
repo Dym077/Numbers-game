@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let button of buttons) {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "submit") {
-                alert("You clicked submit!");
+                verifyAnswer();
             } else {
                 let gameType = this.getAttribute("data-type");
                 runGame(gameType);
@@ -39,17 +39,31 @@ function runGame(gameType) {
 }
 
 function verifyAnswer() {
+    let userAnswer = parseInt(document.getElementById("answer-box").value);
+    let calculatedAnswer = calcAnswer();
+    let isCorrect = userAnswer === calculatedAnswer[0];
 
-}
+    if (isCorrect) {
+        alert("You submitted the correct answer!");
+    } else {
+        alert(`Your answer is ${userAnswer}. The correct answer should be ${calculatedAnswer[0]}!`);
+
+    }
+
+    runGame(calculatedAnswer[1]);
+
+    }
+
+
 
 function calcAnswer() {
 
     /**
      * Gets operands and operator from DOM and retuns the answer
      */
-        let operand1 = parseInt(document.getElementById('operand1').innertext);
-        let operand2 = parseInt(document.getElementById('operand2').innertext);
-        let operator = document.getElementById('operator').innertext;
+        let operand1 = parseInt(document.getElementById('operand1').innerText);
+        let operand2 = parseInt(document.getElementById('operand2').innerText);
+        let operator = document.getElementById('operator').innerText;
 
     if (operator === "+") {
         return [operand1 + operand2, "addition"];
