@@ -45,7 +45,9 @@ function runGame(gameType) {
         dispMultQuestion(num1, num2);
     } else if (gameType === "subtract") {
         dispSubQuestion(num1, num2);
-    } else {
+    } else if (gameType === "division") {
+		dispDivQuestion(num1, num2);
+	} else {
         alert(`Something amiss: ${gameType}`);
         throw `Something amiss: ${gameType}. Aborting`;
     }
@@ -88,7 +90,9 @@ function calcAnswer() {
         return [operand1 * operand2, "multiply"];
     } else if (operator === "-") {
         return [operand1 - operand2, "subtract"];
-    } else {
+    } else if (operator === "/") {
+		return [operand1 / operand2, "division"];
+	} else { 
         alert(`operator not implemented)${operator}`);
         throw `operator not implemented ${operator}. Aborting`;
     }
@@ -135,6 +139,12 @@ function dispMultQuestion(operand1, operand2) {
     document.getElementById('operator').textContent = "x";
 
 }
-function dispDivQuestion() {
+function dispDivQuestion(operand1, operand2) {
+    operand1 = operand1 * operand2;
+
+	document.getElementById("operand1").textContent = operand1;
+	document.getElementById("operand2").textContent = operand2;
+	document.getElementById("operator").textContent = "/";
+
 
 }
