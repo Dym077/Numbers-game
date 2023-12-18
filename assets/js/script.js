@@ -1,11 +1,11 @@
 // Event listener - wait for the DOM to finish loading
 // Get button elements and add listeners
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
-        button.addEventListener("click", function() {
+        button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "submit") {
                 alert("You clicked submit!");
             } else {
@@ -43,9 +43,13 @@ function verifyAnswer() {
 }
 
 function calcAnswer() {
-    let operand1 = parseInt(document.getElementById('operand1').innertext);
-    let operand2 = parseInt(document.getElementById('operand2').innertext);
-    let operator = document.getElementById('operand2').innertext;
+
+    /**
+     * Gets operands and operator from DOM and retuns the answer
+     */
+        let operand1 = parseInt(document.getElementById('operand1').innertext);
+        let operand2 = parseInt(document.getElementById('operand2').innertext);
+        let operator = document.getElementById('operator').innertext;
 
     if (operator === "+") {
         return [operand1 + operand2, "addition"];
@@ -53,9 +57,8 @@ function calcAnswer() {
         alert(`operator not implemented)${operator}`);
         throw `operator not implemented ${operator}. Aborting`;
     }
-    }
-
 }
+
 
 function incrementScore() {
 
@@ -65,11 +68,11 @@ function incrementWrongAnswer() {
 
 }
 
-function dispAddQuestion() {
-    
-    document.getElementById('operand1').textcontent = operand1;
-    document.getElementById('operand2').textcontent = operand2;
-    document.getElementById('operator').textcontent = "+";
+function dispAddQuestion(operand1, operand2) {
+
+    document.getElementById('operand1').textContent = operand1;
+    document.getElementById('operand2').textContent = operand2;
+    document.getElementById('operator').textContent = "+";
 
 }
 
