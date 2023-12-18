@@ -31,11 +31,15 @@ function runGame(gameType) {
 
     if (gameType === "addition") {
         dispAddQuestion(num1, num2);
+    } else if (gameType === "multiply") {
+        dispMultQuestion(num1, num2);
     } else {
         alert(`Something amiss: ${gameType}`);
         throw `Something amiss: ${gameType}. Aborting`;
     }
-
+    if (gameType === "multiply") {
+        dispMultQuestion(num1, num2);
+}
 }
 /**
  * Checks the user answer and returns a verification or the correct answer.
@@ -69,11 +73,14 @@ function calcAnswer() {
         let operator = document.getElementById('operator').innerText;
 
     if (operator === "+") {
-        return [operand1 + operand2, "addition"];
+        return [operand1 * operand2, "multiply"];
+    } else if (operator === "x") {
+        return [operand1 + operand2, "multiply"];
     } else {
         alert(`operator not implemented)${operator}`);
         throw `operator not implemented ${operator}. Aborting`;
     }
+    
 }
 /**
  * Get the current score from the DOM and increments it by 1.
@@ -105,7 +112,11 @@ function dispSubQuestion() {
 
 }
 
-function dispMultQuestion() {
+function dispMultQuestion(operand1, operand2) {
+
+    document.getElementById('operand1').textContent = operand1;
+    document.getElementById('operand2').textContent = operand2;
+    document.getElementById('operator').textContent = "x";
 
 }
 function dispDivQuestion() {
