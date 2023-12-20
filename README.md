@@ -1,6 +1,7 @@
-# Numbers game
+<h1 align="center>Numbers World</h1>
+<h2 align="center">
 
-
+![Am I Responsive](documentation/number_game_amiresponsive.png)
 
 Table of Contents
 
@@ -33,6 +34,7 @@ Table of Contents
 
 ### Wireframes
 - All wireframes were made with pen and paper.
+![Mockup](documentation/20231215_180154.jpg)
 
 
 
@@ -47,15 +49,19 @@ Table of Contents
 
 
 ### Features Left to Implement
+-A popup window instead of an alert box.
 
 ## Testing
 
-http://www.responsinator.com/?url=https%3A%2F%2F8000-dym077-numbersgame1-mdgu2qm29xj.ws-eu107.gitpod.io%2F
+[Responsinator - link](http://www.responsinator.com/?url=https%3A%2F%2F8000-dym077-numbersgame1-mdgu2qm29xj.ws-eu107.gitpod.io%2F)
 
-https://ui.dev/amiresponsive?url=https://8000-dym077-numbersgame1-mdgu2qm29xj.ws-eu107.gitpod.io/
+[Am I Responsive - link](https://ui.dev/amiresponsive?url=https://8000-dym077-numbersgame1-mdgu2qm29xj.ws-eu107.gitpod.io/)
+
 ### Validator Testing
-- #### HTML
+ #### HTML
+- HTML code was validated using https://validator.w3.org/nu which returned no errors or warnings.
     #### CSS
+    - The CSS was tested with https://jigsaw.w3.org/css-validator/ and returned no errors or warnings.
     
 - #### Javascript
   
