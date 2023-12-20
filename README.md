@@ -11,7 +11,7 @@ Table of Contents
 - Features
 - Testing
 - Deployment
-- Techologies Used
+- Technologies Used
 - Credits
 - Acknowledgements
 
@@ -130,6 +130,13 @@ Table of Contents
 
 
 ## Deployment
+- The project was deployed to Github pages using the following steps:
+
+1. Log into Github and locate the [Github repository](https://github.com/Dym077/numbers-game)
+2. Click on the settings icon at the top of the repository.
+3. Scroll down to the Github pages section  
+4. Find the **source** select **main** by "Deply from a branch, next to "Root".
+5. Click save, and refresh the page.
 
 
 ## Credits
