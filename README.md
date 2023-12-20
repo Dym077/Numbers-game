@@ -1,9 +1,19 @@
 <h1 align="center">Numbers World</h1>
-<h2 align="center"></h2>
+<h2 align="center">A web based maths game which tests the players basic knowledge</h2>
 
 ![Am I Responsive](documentation/number_game_amiresponsive.png)
 
 Table of Contents
+- Site Owner Goals
+- User Stories
+- User Feedback
+- Design
+- Features
+- Testing
+- Deployment
+- Techologies Used
+- Credits
+- Acknowledgements
 
   
 ## Site Owner Goals
@@ -35,6 +45,7 @@ Table of Contents
  - The user will improve on the skills rapidly, by practicing the calculation methods. 
  - The user will be comfortable with the rules of the game and keep score easily.
  
+ ## User Feedback
 
 ## Design
 
