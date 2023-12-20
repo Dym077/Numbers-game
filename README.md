@@ -1,5 +1,5 @@
-<h1 align="center>Numbers World</h1>
-<h2 align="center">
+<h1 align="center">Numbers World</h1>
+<h2 align="center"></h2>
 
 ![Am I Responsive](documentation/number_game_amiresponsive.png)
 
@@ -7,14 +7,33 @@ Table of Contents
 
   
 ## Site Owner Goals
+- To offer easy and comprehensive maths learning.
+- For the user to jog their basic math knowledge frequently.
+- For the user to easily choose between the four calculation methods.
+- To provide feedback to the user on the submitted answer.
+- Helping the user to keep score of the progress in the game.
+- To provide an easily accessible user interface.
 
 ## User Stories
 
-- ### First Time User
+ ### First Time User
+ - The user will be able to start playing instantly.
+ - No registration is required.
+ - The user can put in the answer into the answer-box and get the result.
+ - The user will get returning feedback instantly.
+
   
-- ### Returning user
+ ### Returning user
+ - A returning user can easily start a new game.
+ - The user will be familiar with the user interface and the rules of the game.
+ - The player can always start a new game, but will not be able tu resume older games.
+ - A returning user can improve on his or her math skills by frequent playing.  
+ - As the game generates random numbers, the game will not be exhausted.
   
-- ### Frequent user
+ ### Frequent user
+ - A frequent user can easily navigate the user interface and get into the game. 
+ - The user will improve on the skills rapidly, by practicing the calculation methods. 
+ - The user will be comfortable with the rules of the game and keep score easily.
  
 
 ## Design
