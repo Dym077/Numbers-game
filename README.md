@@ -99,13 +99,11 @@ In this section, the player can keep score of the progress of the game. The sect
     
 #### Javascript
  - JavaScript code was tested with [JS Hint - link](https://jshint.com/) which returned 21 warnings.
- 21 warnings
-5	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+ 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 7	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 7	'for of' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 12	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 8	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (verifyAnswer, runGame)
-22	Missing semicolon.
 39	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 40	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 51	'template literal syntax' is only available in ES6 (use 'esversion: 6').
@@ -113,14 +111,17 @@ In this section, the player can keep score of the progress of the game. The sect
 60	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 61	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 62	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-68	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-83	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-84	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-85	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-96	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-97	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-107	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-115	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+70	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+74	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+88	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+89	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+90	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+101	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+102	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+112	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+120	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+
+These warnings cause no trouble in the functionality of the game so they are left in there. 
   
   
 
@@ -136,6 +137,7 @@ In this section, the player can keep score of the progress of the game. The sect
 ### Game Testing
 
 ### Browser Testing
+The game is tested in Google Chrome, Safari, 
 
     
 ### Device Testing
