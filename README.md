@@ -71,12 +71,16 @@ Table of Contents
 
 ## Features
 
-### Home Page
+### Landing Page
 
-### Game Area
+The landing page consists of a heading, a game section and a score section. The heading displays the name of the game as well as a logo. 
 
+### Game Section
 
+In the game section there are four buttons which gives the user the opportunity to choose between the four calculation methods. Below the buttons you find the randomly generated numbers together with the calculation method of choice. To the right you find the answer-box in which you can type the answer. The player can dial in the answer either with the keyboard or by using the arrows in the answer-box. To submit the answer the player can either click the "submit"button or hit "enter" on the keyboard. A popup-box will appear on the screen, displaying feedback to the user. If the answer is correct, the popup-box will say "You submitted the correct answer!". If the answer is wrong, the popup-box will tell the player the value of the answer and what the real answer is. For example if the player inaccurately submits the answer "31" to the numbers 16 + 16, the popup-box will say "Your answer is 31. The correct answer should be 32!" To contiue playing, the player can either click "OK" or hit "enter" and another challenge will appear. When the player wants to change calculation method, it's easily done by clicking another of the four buttons displaying the methods. The player is free to play as long as desired, as the game continuosly generates new numbers to calculate. 
 
+#### Score section
+In this section, the player can keep score of the progress of the game. The section consists of two areas - the "Correct"-area and the "Incorrect"-area. Every time the player submits a correct answer, the value in the "Correct"-area increases by "1". Every time the player submits an incorrect answer, the value in the "Incrrect"-area increases by "1". The values in the "Correct"-area has a green colour and the values in the "Incorrect"-area has a red colour.
 
 ### Features Left to Implement
 -A popup window instead of an alert box.
@@ -89,11 +93,12 @@ Table of Contents
 
 ### Validator Testing
  #### HTML
-- HTML code was validated using https://validator.w3.org/nu which returned no errors or warnings.
+- HTML code was validated using [The W3C Markup Validator - link] (https://validator.w3.org/nu) which returned no errors or warnings.
     #### CSS
-    - The CSS was tested with https://jigsaw.w3.org/css-validator/ and returned no errors or warnings.
+    - The CSS was tested with [The W3C CSS Validator - link](https://jigsaw.w3.org/css-validator/) and returned no errors or warnings.
     
-- #### Javascript
+#### Javascript
+ - JavaScript code was tested with [JS Hint - link] https://jshint.com/ which returnes 21 warnings but no errors.
   
   
 
@@ -116,6 +121,7 @@ Table of Contents
 ### Fixed Bugs
 
 ### Known Bugs
+- No known bugs
 
 
 ## Technologies Used
