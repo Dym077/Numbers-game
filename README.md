@@ -98,7 +98,29 @@ In this section, the player can keep score of the progress of the game. The sect
     - The CSS was tested with [The W3C CSS Validator - link](https://jigsaw.w3.org/css-validator/) and returned no errors or warnings.
     
 #### Javascript
- - JavaScript code was tested with [JS Hint - link] https://jshint.com/ which returnes 21 warnings but no errors.
+ - JavaScript code was tested with [JS Hint - link] https://jshint.com/ which returned 21 warnings.
+ 21 warnings
+5	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+7	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+7	'for of' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+12	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+8	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (verifyAnswer, runGame)
+22	Missing semicolon.
+39	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+40	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+51	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+52	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+60	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+61	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+62	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+68	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+83	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+84	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+85	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+96	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+97	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+107	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+115	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
   
   
 
