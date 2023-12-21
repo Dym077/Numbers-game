@@ -1,6 +1,1 @@
-<i class="fa-solid fa-calculator"></i>
-don't forget to implement this in the right place.
-import a logo.png file to images folder
-add a custom favicon to the html
-Accessibility is only at 69%.
-Implement a message-box instead of the alert. 
+Media query for the responsiveness of the site.

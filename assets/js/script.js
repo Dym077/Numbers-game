@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.key === "Enter") {
             verifyAnswer();
         } 
-    })
+    });
 
     runGame("addition");
 
@@ -62,14 +62,19 @@ function verifyAnswer() {
     let isCorrect = userAnswer === calculatedAnswer[0];
 
     if (isCorrect) {
-        alert("You submitted the correct answer!");
+       
+        document.getElementById('feedback').innerHTML = 'You submitted the correct answer!';
         incrementScore();
     } else {
-        alert(`Your answer is ${userAnswer}. The correct answer should be ${calculatedAnswer[0]}!`);
+        
+        document.getElementById('feedback').innerHTML = `Your answer is ${userAnswer}. The correct answer should be ${calculatedAnswer[0]}!`;
         incrementWrongAnswer();
     }
 
-    runGame(calculatedAnswer[1]);
+    setTimeout(()=>{
+        document.getElementById('feedback').innerHTML = '';
+        runGame(calculatedAnswer[1]);
+    }, 2000);
 
     }
 

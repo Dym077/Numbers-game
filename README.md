@@ -95,10 +95,10 @@ In this section, the player can keep score of the progress of the game. The sect
  #### HTML
 - HTML code was validated using [The W3C Markup Validator - link] (https://validator.w3.org/nu) which returned no errors or warnings.
     #### CSS
-    - The CSS was tested with [The W3C CSS Validator - link](https://jigsaw.w3.org/css-validator/) and returned no errors or warnings.
+    - The CSS was tested with [The W3C CSS Jigsaw Validator - link](https://jigsaw.w3.org/css-validator/) and returned no errors or warnings.
     
 #### Javascript
- - JavaScript code was tested with [JS Hint - link] https://jshint.com/ which returned 21 warnings.
+ - JavaScript code was tested with [JS Hint - link](https://jshint.com/) which returned 21 warnings.
  21 warnings
 5	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 7	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
