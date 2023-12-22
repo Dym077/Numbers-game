@@ -114,19 +114,19 @@ padding: 0 15px;
 
 .button--yellow {
     border-color: rgb(255, 208, 0);
-    color: rgb(255, 208, 0);
+    color: rgb(254, 254, 254);
 
 }
 
 .button--yellow:active,
 .button--yellow:hover {
     background-color: darkorange;
-    color: white;
+    color: rgb(243, 252, 190);
 }
 
 .button--green {
-    border-color:  rgb(95, 115, 27);
-    color:  rgb(206, 238, 101);
+    border-color:  rgb(192, 235, 51);
+    color:  rgb(254, 254, 254);
 }
 
 .button--green:active,
@@ -136,7 +136,7 @@ padding: 0 15px;
 }
 .button--gray {
     border-color: rgb(132, 132, 130);
-    color: rgb(11, 196, 11);
+    color: rgb(254, 254, 254);
 }
 
 .button--gray:active,
@@ -146,13 +146,13 @@ padding: 0 15px;
 }
 .button--black {
     border-color: rgb(140, 139, 138);
-    color: rgb(1, 1, 1);
+    color: rgb(254, 254, 254);
 }
 
 .button--black:active,
 .button--black:hover {
     background-color: rgb(157, 157, 156);
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* Media queries for different machines */
@@ -194,7 +194,7 @@ padding: 0 15px;
         margin: 0 auto;
     }
     .button--gray {
-        margin-top: 0;
+        margin-top: 8px;
     }
 
     .score-section {
