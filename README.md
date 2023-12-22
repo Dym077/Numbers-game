@@ -61,6 +61,9 @@ Table of Contents
 - For this game I chose the font "silkscreen", a Google font which was designed by Jason Kottke. This font has a very retro-styled character to it, which brings to mind old computer games from the 80's. 
 
 ### Layout
+- The layout of the page is divided into the following sections:
+* Game section
+* Score section
 
 ### Wireframes
 - All wireframes were made with pen and paper.
@@ -74,16 +77,20 @@ Table of Contents
 ### Landing Page
 
 The landing page consists of a heading, a game section and a score section. The heading displays the name of the game as well as a logo. 
+![Landing page](documentation/landing_page.png)
 
 ### Game Section
+![Game section](documentation/game_section.png)
 
-In the game section there are four buttons which gives the user the opportunity to choose between the four calculation methods. Below the buttons you find the randomly generated numbers together with the calculation method of choice. To the right you find the answer-box in which you can type the answer. The player can dial in the answer either with the keyboard or by using the arrows in the answer-box. To submit the answer the player can either click the "submit"button or hit "enter" on the keyboard. A feedback text will appear on the screen, displaying feedback to the user. If the answer is correct, the text will say "You submitted the correct answer!". If the answer is wrong, the text will tell the player the value of the answer and what the real answer is. For example if the player inaccurately submits the answer "31" to the numbers 16 + 16, the feedback text will say "Your answer is 31. The correct answer should be 32!" A timeout of two seconds will engage before another challenge will appear. When the player wants to change calculation method, it's easily done by clicking another of the four buttons displaying the methods. The player is free to play as long as desired, as the game continuosly generates new random numbers to calculate. 
+- In the game section there are four buttons which gives the user the opportunity to choose between the four calculation methods. Below the buttons you find the randomly generated numbers together with the calculation method of choice. To the right you find the answer-box in which you can type the answer. The player can dial in the answer either with the keyboard or by using the arrows in the answer-box. To submit the answer the player can either click the "submit"button or hit "enter" on the keyboard. A feedback text will appear on the screen, displaying feedback to the user. If the answer is correct, the text will say "You submitted the correct answer!". If the answer is wrong, the text will tell the player the value of the answer and what the real answer is. For example if the player inaccurately submits the answer "31" to the numbers 16 + 16, the feedback text will say "Your answer is 31. The correct answer should be 32!" A timeout of two seconds will engage before another challenge will appear. When the player wants to change calculation method, it's easily done by clicking another of the four buttons displaying the methods. The player is free to play as long as desired, as the game continuosly generates new random numbers to calculate. 
 
 #### Score section
-In this section, the player can keep score of the progress of the game. The section consists of two areas - the "Correct"-area and the "Incorrect"-area. Every time the player submits a correct answer, the value in the "Correct"-area increases by "1". Every time the player submits an incorrect answer, the value in the "Incrrect"-area increases by "1". The values in the "Correct"-area has a green colour and the values in the "Incorrect"-area has a red colour.
+![Score section](documentation/score_section.png)
+- In this section, the player can keep score of the progress of the game. The section consists of two areas - the "Correct"-area and the "Incorrect"-area. Every time the player submits a correct answer, the value in the "Correct"-area increases by "1". Every time the player submits an incorrect answer, the value in the "Incrrect"-area increases by "1". The values in the "Correct"-area has a green colour and the values in the "Incorrect"-area has a red colour.
 
 ### Features Left to Implement
--A popup window instead of an alert box.
+- No further features are planned for implementation.
+There was a plan for a popup-window instead of an alert-box to display feedback to the player, but this code was changed to a text-message in the game section, for a cleaner and more accessible look.
 
 ## Testing
 
@@ -126,6 +133,7 @@ These warnings cause no trouble in the functionality of the game so they are lef
   
 
 ### Accessibility 
+- The site has achieved a Lighthouse accessibility score of 77%.
 
 
 
@@ -141,8 +149,6 @@ The game is tested in Google Chrome, Safari,
 
     
 ### Device Testing
-
-### Fixed Bugs
 
 ### Known Bugs
 - No known bugs
