@@ -194,7 +194,7 @@ No user has reported any problems with the game.
 - The inspiration for the layout of this game came from the classic album "Computer World" by Kraftwerk and retro games from the 80's. 
 
 ### Media
-- Image (the logo - numbers keypad) is a custom photo from the owner's private library.
+- Images (the logo - numbers keypad, and the favicon) are custom photos from the owner's private library.
 
 ### Resources Used
 - [Math Game With Javascript -Link](https://www.youtube.com/watch?v=AF6vGYIyV8M)
