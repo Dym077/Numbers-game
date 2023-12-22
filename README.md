@@ -5,16 +5,15 @@ Numbers World is a simple and easy-to-play web based game which allows the playe
 ![Am I Responsive](documentation/number_game_amiresponsive.png)
 
 Table of Contents
-- Site Owner Goals
-- User Stories
-- User Feedback
-- Design
-- Features
-- Testing
-- Deployment
-- Technologies Used
-- Credits
-- Acknowledgements
+- Site Owner Goals(#site-owner-goals)
+- User Stories(#user-stories)
+- Design(#design)
+- Features(#features)
+- Testing(#testing)
+- Deployment(#deployment)
+- Technologies Used(#technologies-used)
+- Credits(#credits)
+- Acknowledgements(#acknowledgements)
 
   
 ## Site Owner Goals
@@ -45,8 +44,6 @@ Table of Contents
  - A frequent user can easily navigate the user interface and get into the game. 
  - The user will improve on the skills rapidly, by practicing the calculation methods. 
  - The user will be comfortable with the rules of the game and keep score easily.
- 
- ## User Feedback
 
 ## Design
 
@@ -67,7 +64,7 @@ Table of Contents
 * Score section
 
 ### Wireframes
-- The wireframe were made with pen and paper.
+- The wireframe was made with pen and paper.
 ![Mockup](documentation/20231215_180154.jpg)
 
 
@@ -147,7 +144,7 @@ These warnings cause no trouble in the functionality of the game so they are lef
 - When hovering over the buttons with the mouse, the colours will change slightly to indicate that the player is about to choose the particular option the button provides. When clicked, the buttons with the calculation methods instantly will provide random numbers. When the "submit"-button is clicked, the game will return feedback to the player. All buttons have been tested and work properly. 
 
 ### Game Testing
-- Standing by for more user input. 
+- The game has been frequently tested by the user during the development process.
 
 ### Browser Testing
 - The game is tested in Google Chrome, Safari and Microsoft Edge. No problems have been reported.
