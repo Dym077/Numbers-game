@@ -67,7 +67,7 @@ Table of Contents
 * Score section
 
 ### Wireframes
-- All wireframes were made with pen and paper.
+- The wireframe were made with pen and paper.
 ![Mockup](documentation/20231215_180154.jpg)
 
 
@@ -135,7 +135,8 @@ These warnings cause no trouble in the functionality of the game so they are lef
 
 ### Accessibility 
 - The site has achieved a Lighthouse accessibility score of 77%.
-![Lighthouse](documentation/lighthouse.png)
+![Lighthouse -desktop](documentation/lighthouse.png)
+![Lighthouse -mobile](documentation/lighthouse_mobile.png)
 
 
 
