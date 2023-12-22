@@ -1,5 +1,6 @@
 <h1 align="center">Numbers World</h1>
 <h2 align="center">A web based maths game which tests the players basic knowledge</h2>
+Numbers World is a simple and easy-to-play web based game which allows the players to test their basic knowledge of the subject of maths, choosing between the four calculation methods. The game is a great way to test your math skills on the go, either by the computer, on your phone or on a tablet. 
 
 ![Am I Responsive](documentation/number_game_amiresponsive.png)
 
@@ -134,24 +135,29 @@ These warnings cause no trouble in the functionality of the game so they are lef
 
 ### Accessibility 
 - The site has achieved a Lighthouse accessibility score of 77%.
+![Lighthouse](documentation/lighthouse.png)
 
 
 
 ### Input Testing
+- When the player inputs the answer into the answer-box, the feedback text will return feedback to the user, either confirming the users correct answer or telling the player what the correct answer should be. If the player has not put an answer in the answer-box and clicks "submit" the feedback will tel the player that the answer is NAN, followed by the correct answer.
 
 ### Button Testing
-
+- When hovering over the buttons with the mouse, the colours will change slightly to indicate that the player is about to choose the particular option the button provides. When clicked, the buttons with the calculation methods instantly will provide random numbers. When the "submit"-button is clicked, the game will return feedback to the player. All buttons have been tested and work properly. 
 
 ### Game Testing
+- Standing by for more user input. 
 
 ### Browser Testing
-The game is tested in Google Chrome, Safari, 
+- The game is tested in Google Chrome, Safari and Microsoft Edge. No problems have been reported.
 
     
 ### Device Testing
+- The game has been tested with laptops, desktops, Samsung galaxy phones and iPhones.
+No user has reported any problems with the game.
 
 ### Known Bugs
-- No known bugs
+- No known bugs.
 
 
 ## Technologies Used
@@ -161,8 +167,15 @@ The game is tested in Google Chrome, Safari,
 - HTML5
 - CSS
 
-### Frameworks - Libraries - Programs Used
-
+### Frameworks, libraries and programs used for this project
+ - [Am I Responsive](http://ami.responsivedesign.is/) - Used to verify responsiveness of the site on different devices.
+- [Responsinator](http://www.responsinator.com/) - Used to verify responsiveness of the site on different devices.
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for supervision, including testing responsiveness and performance.
+- [Font Awesome](https://fontawesome.com/) - Used for icons in math buttons.
+- [GitHub](https://github.com/) - Used for and hosting and version control.
+- [Google Fonts](https://fonts.google.com/) - Used to import and use fonts on the page.
+- [W3C](https://www.w3.org/) - Used for validation HTML & CSS.
+- [Favicon](https://favicon.io/) - Used to create a custom favicon.
 
 
 ## Deployment
@@ -171,19 +184,24 @@ The game is tested in Google Chrome, Safari,
 1. Log into Github and locate the [Github repository](https://github.com/Dym077/numbers-game)
 2. Click on the settings icon at the top of the repository.
 3. Scroll down to the Github pages section  
-4. Find the **source** select **main** by "Deply from a branch, next to "Root".
+4. Find the **source** select **main** by "Deploy from a branch, next to "Root".
 5. Click save, and refresh the page.
 
 
 ## Credits
 
 ### Content
-
+- The inspiration for the layout of this game came from the classic album "Computer World" by Kraftwerk and retro games from the 80's. 
 
 ### Media
+- Image (the logo - numbers keypad) is a custom photo from the owner's private library.
 
 ### Resources Used
-
+- [Math Game With Javascript -Link](https://www.youtube.com/watch?v=AF6vGYIyV8M)
+- [How To Make A Popup Using HTML, CSS And JavaScript -Link](https://www.youtube.com/watch?v=AF6vGYIyV8M&t=4s)
+- The Love Maths-walkthrough lessons by Code Institute.
 
 ## Acknowledgments
-- https://www.youtube.com/watch?v=AF6vGYIyV8M
+- My mentor Antonio for his useful advice and support.
+- The Slack community of Code institute for their kind advice and support.
+
