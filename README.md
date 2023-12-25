@@ -131,7 +131,7 @@ These warnings cause no trouble in the functionality of the game so they are lef
   
 
 ### Accessibility 
-- The site has achieved a Lighthouse accessibility score of 77%.
+- The site has achieved a Lighthouse accessibility score of 100%.
 ![Lighthouse -desktop](documentation/lighthouse.png)
 ![Lighthouse -mobile](documentation/lighthouse_mobile.png)
 
