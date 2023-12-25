@@ -52,7 +52,7 @@ Table of Contents
 
 
 ### Colour Scheme
-- The colours for this game is based on the sleeve design of Kraftwerk's classic record "Computer World". Dominating values are of course yellow and grey, but there are also values of green, red and orange. The main goal with the choice of colours was to hint at the record and more specifically the songs "Numbers" and "Pocket Calculator". These colours, combined with the font, should provide a retro feel to the game as well. 
+- The colours for this game is based on the sleeve design of Kraftwerk's classic record "Computer World". Dominating values are of course yellow and grey, but there are also values of green, red and orange. The main goal with the choice of colours was to ensure a recognizable and also easy to operate user interface. These colours, combined with the font, should provide a retro feel to the game as well. 
 
 
 ### Fonts
