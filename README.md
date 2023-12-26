@@ -89,9 +89,9 @@ There was a plan for a popup-window instead of an alert-box to display feedback 
 
 ## Testing
 
-[Responsinator - link](http://www.responsinator.com/?url=https%3A%2F%2F8000-dym077-numbersgame1-mdgu2qm29xj.ws-eu107.gitpod.io%2F)
+- [Responsinator - link](http://www.responsinator.com/?url=https%3A%2F%2F8000-dym077-numbersgame1-mdgu2qm29xj.ws-eu107.gitpod.io%2F)
 
-[Am I Responsive - link](https://ui.dev/amiresponsive?url=https://8000-dym077-numbersgame1-mdgu2qm29xj.ws-eu107.gitpod.io/)
+- [Am I Responsive - link](https://ui.dev/amiresponsive?url=https://8000-dym077-numbersgame1-mdgu2qm29xj.ws-eu107.gitpod.io/)
 
 ### Validator Testing
  #### HTML
@@ -186,7 +186,7 @@ No user has reported any problems with the game.
 ## Credits
 
 ### Content
-- The inspiration for the layout of this game came from the classic album "Computer World" by Kraftwerk and retro games from the 80's. I thought that the concept and the visual layout of the album could work as an inspiration for the game, not least because of the song "Numbers".
+- The inspiration for the layout of this game came from the classic album [Computer World](https://www.discogs.com/master/3112-Kraftwerk-Computerwelt) by Kraftwerk and retro games from the 80's. I thought that the concept and the visual layout of the album could work as an inspiration for the game, not least because of the song "Numbers".
 
 ### Media
 - Images (the logo - numbers keypad, and the favicon) are custom photos from the owner's private library.
