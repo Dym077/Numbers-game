@@ -4,7 +4,7 @@ Numbers World is a simple and easy-to-play web based game which allows the playe
 
 ![Am I Responsive](documentation/number_game_amiresponsive.png)
 
-Table of Contents
+## Table of Contents
 - Site Owner Goals
 - User Stories
 - Design
