@@ -82,7 +82,7 @@ The landing page consists of a heading, a game section and a score section. The 
 
 #### Score section
 ![Score section](documentation/score_section.png)
-- In this section, the player can keep score of the progress of the game. The section consists of two areas - the "Correct"-area and the "Incorrect"-area. Every time the player submits a correct answer, the value in the "Correct"-area increases by "1". Every time the player submits an incorrect answer, the value in the "Incrrect"-area increases by "1". The values in the "Correct"-area has a green colour and the values in the "Incorrect"-area has a red colour.
+- In this section, the player can keep score of the progress of the game. The section consists of two areas - the "Correct"-area and the "Incorrect"-area. Every time the player submits a correct answer, the value in the "Correct"-area increases by "1". Every time the player submits an incorrect answer, the value in the "Incorrect"-area increases by "1". The values in the "Correct"-area has a green colour and the values in the "Incorrect"-area has a red colour.
 
 ### Features Left to Implement
 - No further features are planned for implementation.
@@ -199,6 +199,7 @@ No user has reported any problems with the game.
 - [Deque University](https://dequeuniversity.com/rules/axe/4.8/button-name)
 - [W3Schools](https://www.w3schools.com/)
 - [Stack Overflow](https://stackoverflow.com/)
+- Google font designed by Jason Kottke.
 
 ## Acknowledgments
 - My mentor Antonio for his useful advice and support.
