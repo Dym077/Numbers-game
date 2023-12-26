@@ -1,6 +1,6 @@
 <h1 align="center">Numbers World</h1>
 <h2 align="center">A web based maths game which tests the players basic knowledge</h2>
-Numbers World is a simple and easy-to-play web based game which allows the players to test their basic knowledge of the subject of maths, choosing between the four calculation methods. The game is a great way to test your math skills on the go, either by the computer, on your phone or on a tablet. 
+Numbers World is a simple and easy-to-play web based game which allows the players to test their basic knowledge of the subject of maths, choosing between the four calculation methods. The game is a great way to test your math skills on the go, either by the computer, on your phone or on a tablet. You can find the deployed version here: (https://github.com/Dym077/numbers-game)
 
 ![Am I Responsive](documentation/number_game_amiresponsive.png)
 
