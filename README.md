@@ -66,6 +66,7 @@ Table of Contents
 ### Wireframes
 - The wireframe was made with pen and paper.
 ![Mockup](documentation/20231215_180154.jpg)
+![Mockup](documentation/wireframe_mobile.jpg)
 
 ## Features
 
