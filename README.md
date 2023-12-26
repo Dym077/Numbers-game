@@ -5,15 +5,15 @@ Numbers World is a simple and easy-to-play web based game which allows the playe
 ![Am I Responsive](documentation/number_game_amiresponsive.png)
 
 Table of Contents
-- Site Owner Goals(#site-owner-goals)
-- User Stories(#user-stories)
-- Design(#design)
-- Features(#features)
-- Testing(#testing)
-- Deployment(#deployment)
-- Technologies Used(#technologies-used)
-- Credits(#credits)
-- Acknowledgements(#acknowledgements)
+- Site Owner Goals
+- User Stories
+- Design
+- Features
+- Testing
+- Deployment
+- Technologies Used
+- Credits
+- Acknowledgements
 
   
 ## Site Owner Goals
