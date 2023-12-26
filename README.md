@@ -67,9 +67,6 @@ Table of Contents
 - The wireframe was made with pen and paper.
 ![Mockup](documentation/20231215_180154.jpg)
 
-
-
-
 ## Features
 
 ### Landing Page
@@ -144,7 +141,7 @@ These warnings cause no trouble in the functionality of the game so they are lef
 - When hovering over the buttons with the mouse, the colours will change slightly to indicate that the player is about to choose the particular option the button provides. When clicked, the buttons with the calculation methods instantly will provide random numbers. When the "submit"-button is clicked, the game will return feedback to the player. All buttons have been tested and work properly. 
 
 ### Game Testing
-- The game has been frequently tested by the user during the development process.
+- The game has been frequently tested by the user during the development process. Friends and family to the developer has also tested the game and reported no errors.
 
 ### Browser Testing
 - The game is tested in Google Chrome, Safari and Microsoft Edge. No problems have been reported.
@@ -189,7 +186,7 @@ No user has reported any problems with the game.
 ## Credits
 
 ### Content
-- The inspiration for the layout of this game came from the classic album "Computer World" by Kraftwerk and retro games from the 80's. 
+- The inspiration for the layout of this game came from the classic album "Computer World" by Kraftwerk and retro games from the 80's. I thought that the concept and the visual layout of the album could work as an inspiration for the game, not least because of the song "Numbers".
 
 ### Media
 - Images (the logo - numbers keypad, and the favicon) are custom photos from the owner's private library.
@@ -198,6 +195,9 @@ No user has reported any problems with the game.
 - [Math Game With Javascript -Link](https://www.youtube.com/watch?v=AF6vGYIyV8M)
 - [How To Make A Popup Using HTML, CSS And JavaScript -Link](https://www.youtube.com/watch?v=AF6vGYIyV8M&t=4s)
 - The Love Maths-walkthrough lessons by Code Institute.
+- [Deque University](https://dequeuniversity.com/rules/axe/4.8/button-name)
+- [W3Schools](https://www.w3schools.com/)
+- [Stack Overflow](https://stackoverflow.com/)
 
 ## Acknowledgments
 - My mentor Antonio for his useful advice and support.
