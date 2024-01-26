@@ -59,12 +59,12 @@ function runGame(gameType) {
 function verifyAnswer() {
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calcAnswer();
-    let userName = (document.getElementById("user-submit").value);
+    let userName = document.getElementById("username").value;
     let isCorrect = userAnswer === calculatedAnswer[0];
 
     if (isCorrect) {
        
-        document.getElementById('feedback').innerHTML = '${userName} submitted the correct answer!';
+        document.getElementById('feedback').innerHTML = `${userName} submitted the correct answer!`;
         incrementScore();
     } else {
         
