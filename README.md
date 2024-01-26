@@ -85,7 +85,7 @@ The landing page consists of a heading, a game section and a score section. The 
 ### Game Section
 ![Game section](documentation/game_section.png)
 
-- In the game section there are four buttons which gives the user the opportunity to choose between the four calculation methods. Below the buttons you find the randomly generated numbers together with the calculation method of choice. To the right you find the answer-box in which you can type the answer. The player can dial in the answer either with the keyboard or by using the arrows in the answer-box. To submit the answer the player can either click the "submit"button or hit "enter" on the keyboard. A feedback text will appear on the screen, displaying feedback to the user. If the answer is correct, the text will say "You submitted the correct answer!". If the answer is wrong, the text will tell the player the value of the answer and what the real answer is. For example if the player inaccurately submits the answer "31" to the numbers 16 + 16, the feedback text will say "Your answer is 31. The correct answer should be 32!" A timeout of two seconds will engage before another challenge will appear. When the player wants to change calculation method, it's easily done by clicking another of the four buttons displaying the methods. The player is free to play as long as desired, as the game continuosly generates new random numbers to calculate. 
+- In the game section there are four buttons which gives the user the opportunity to choose between the four calculation methods. Below the buttons you find the randomly generated numbers together with the calculation method of choice. To the right you find the answer-box in which you can type the answer. The player can dial in the answer either with the keyboard or by using the arrows in the answer-box. To submit the answer the player can either click the "submit"button or hit "enter" on the keyboard. A feedback text will appear on the screen, displaying feedback to the user. A timeout of three seconds will engage before another challenge will appear. When the player wants to change calculation method, it's easily done by clicking another of the four buttons displaying the methods.
 ![Correct answer](documentation/correct_answer.png)
 
 #### Score section
@@ -206,6 +206,7 @@ No user has reported any problems with the game.
 
 ### Resources Used
 - [Math Game With Javascript -Link](https://www.youtube.com/watch?v=zzCuph34SXM&t=458s)
+- [Awesome Javascript Math Game with Timer -Link](https://www.youtube.com/watch?v=qrtLGK_8S1Y)
 - [How To Make A Popup Using HTML, CSS And JavaScript -Link](https://www.youtube.com/watch?v=AF6vGYIyV8M)
 - [Deque University](https://dequeuniversity.com/rules/axe/4.8/button-name)
 - [W3Schools](https://www.w3schools.com/)
