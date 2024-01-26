@@ -88,8 +88,11 @@ The landing page consists of a heading, a game section and a score section. The 
 - In this section, the player can keep score of the progress of the game. The section consists of two areas - the "Correct"-area and the "Incorrect"-area. Every time the player submits a correct answer, the value in the "Correct"-area increases by "1". Every time the player submits an incorrect answer, the value in the "Incorrect"-area increases by "1". The values in the "Correct"-area has a green colour and the values in the "Incorrect"-area has a red colour.
 
 ### Features Left to Implement
-- No further features are planned for implementation.
-There was a plan for a popup-window instead of an alert-box to display feedback to the player, but this code was changed to a text-message in the game section, for a cleaner and more accessible look.
+- A feature which allows the player to guess the calculation method by looking att the operands and the solution.
+- A timer that allows the player to find the right solution during limited time. 
+- An option for the player to enter a username so that the game can 'interact' with the player. 
+- A time lilit or a limited number of questions that ups the stakes and makes the game more challenging.
+- A message that tells the player 'You win/ lose!' 
 
 ## Testing
 
@@ -196,9 +199,8 @@ No user has reported any problems with the game.
 - Images (the logo - numbers keypad, and the favicon) are custom photos from the owner's private library.
 
 ### Resources Used
-- [Math Game With Javascript -Link](https://www.youtube.com/watch?v=AF6vGYIyV8M)
-- [How To Make A Popup Using HTML, CSS And JavaScript -Link](https://www.youtube.com/watch?v=AF6vGYIyV8M&t=4s)
-- The Love Maths-walkthrough lessons by Code Institute.
+- [Math Game With Javascript -Link](https://www.youtube.com/watch?v=zzCuph34SXM&t=458s)
+- [How To Make A Popup Using HTML, CSS And JavaScript -Link](https://www.youtube.com/watch?v=AF6vGYIyV8M)
 - [Deque University](https://dequeuniversity.com/rules/axe/4.8/button-name)
 - [W3Schools](https://www.w3schools.com/)
 - [Stack Overflow](https://stackoverflow.com/)

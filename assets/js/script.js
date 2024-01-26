@@ -59,11 +59,12 @@ function runGame(gameType) {
 function verifyAnswer() {
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calcAnswer();
+    let userName = (document.getElementById("user-submit").value);
     let isCorrect = userAnswer === calculatedAnswer[0];
 
     if (isCorrect) {
        
-        document.getElementById('feedback').innerHTML = 'You submitted the correct answer!';
+        document.getElementById('feedback').innerHTML = '${userName} submitted the correct answer!';
         incrementScore();
     } else {
         
@@ -74,7 +75,7 @@ function verifyAnswer() {
     setTimeout(()=>{
         document.getElementById('feedback').innerHTML = '';
         runGame(calculatedAnswer[1]);
-    }, 2000);
+    }, 3000);
 
     }
 
