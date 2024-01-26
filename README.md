@@ -160,6 +160,7 @@ No user has reported any problems with the game.
 
 ### Known Bugs
 - No known bugs.
+- The game throws an alert when the user submits the username: "Something amiss!"
 
 
 ## Technologies Used
