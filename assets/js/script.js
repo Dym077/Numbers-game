@@ -71,7 +71,9 @@ function verifyAnswer() {
         document.getElementById('feedback').innerHTML = `Your answer is ${userAnswer} ${userName}. The correct answer should be ${calculatedAnswer[0]}!`;
         incrementWrongAnswer();
     }
-
+    /** 
+     * Displays the feedback to the user for 3 seconds
+     */
     setTimeout(()=>{
         document.getElementById('feedback').innerHTML = '';
         runGame(calculatedAnswer[1]);
