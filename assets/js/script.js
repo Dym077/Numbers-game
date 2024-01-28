@@ -54,6 +54,12 @@ function runGame(gameType) {
     
 }
 /**
+ * countdown elements
+ */
+    let count_down = 10000
+    let count_down_element = document.getElementById('countDown')
+    count_down_element.innerHTML = count_down
+/**
  * This function will start the timer with the next question - not properly implemented yet
  */
 function runTimer(){
