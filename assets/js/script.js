@@ -53,6 +53,22 @@ function runGame(gameType) {
     }
     
 }
+
+function runTimer(){
+    let timerInterval = setInterval(() => {
+        count_down -=100
+        count_down_element.innerHTML = count_down
+
+        if (count_down == -100) {
+            alert(`Game Over! You scored ${user_score} points`)
+            location.reload()
+            
+        }
+
+
+    },100)
+}
+
 /**
  * Checks the user answer and returns a verification or the correct answer.
  */
