@@ -74,6 +74,8 @@ Numbers World is a simple and easy-to-play web based game which allows the playe
 ![Mockup](documentation/20231215_180154.jpg)
 - This is the mockup for the mobile devices:
 ![Mockup](documentation/wireframe_mobile.png)
+- The latest mockup including the timer and username sections:
+![Mockup2](documentation/numbers-world-mockup2.jpg)
 
 ## Features
 
