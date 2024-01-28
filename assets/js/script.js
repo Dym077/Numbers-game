@@ -53,7 +53,9 @@ function runGame(gameType) {
     }
     
 }
-
+/**
+ * This function will start the timer with the next question - not properly implemented yet
+ */
 function runTimer(){
     let timerInterval = setInterval(() => {
         count_down -=100
@@ -70,7 +72,9 @@ function runTimer(){
 }
 
 function stopTimer() {
-    
+    /**
+     * This function will stop the timer - it is not finished yet
+     */
 }
 
 /**
