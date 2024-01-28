@@ -69,6 +69,10 @@ function runTimer(){
     },100)
 }
 
+function stopTimer() {
+    
+}
+
 /**
  * Checks the user answer and returns a verification or the correct answer.
  */
