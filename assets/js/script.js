@@ -56,7 +56,7 @@ function runGame(gameType) {
 /**
  * countdown elements
  */
-    let count_down = 10000
+    let count_down = 10
     let count_down_element = document.getElementById('countDown')
     count_down_element.innerHTML = count_down
 /**
@@ -67,20 +67,14 @@ function runTimer(){
         count_down -=100
         count_down_element.innerHTML = count_down
 
-        if (count_down == -100) {
+        if (count_down == -10) {
             alert(`Game Over! You scored ${user_score} points`)
             location.reload()
             
         }
 
 
-    },100)
-}
-
-function stopTimer() {
-    /**
-     * This function will stop the timer - it is not finished yet
-     */
+    },1000)
 }
 
 /**
