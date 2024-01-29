@@ -85,6 +85,14 @@ function verifyAnswer() {
     let calculatedAnswer = calcAnswer();
     let userName = document.getElementById("username").value;
     let isCorrect = userAnswer === calculatedAnswer[0];
+    userName.addEventListener('input', function() {
+        let value = userName.value();
+        if (!value) {
+           userName.value = 'Player';
+        } else {
+           userName.value = value;
+        }
+       });
 
     if (isCorrect) {
        
