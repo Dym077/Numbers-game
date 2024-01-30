@@ -22,7 +22,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     runGame("addition");
-
+timerInterval = setInterval(function () {
+    // Time will decrease by the second
+    timer -=1;
+    // Display remaining time
+    timer.innerHTML = timer;
+    if(timeLeft == 0) {
+        // Time stops when reaching zero
+        clearInterval(timerInterval);
+    }
+}, 1000);
 });
 
 /**
@@ -53,34 +62,13 @@ function runGame(gameType) {
     }
     
 }
-/**
- * countdown elements
- */
-    let count_down = 10
-    let count_down_element = document.getElementById('countDown')
-    count_down_element.innerHTML = count_down
-/**
- * This function will start the timer with the next question - not properly implemented yet
- */
-function runTimer(){
-    let timerInterval = setInterval(() => {
-        count_down -=100
-        count_down_element.innerHTML = count_down
-
-        if (count_down == -10) {
-            alert(`Game Over! You scored ${user_score} points`)
-            location.reload()
-            
-        }
-
-
-    },1000)
-}
 
 /**
  * Checks the user answer and returns a verification or the correct answer.
  */
 function verifyAnswer() {
+    let timer = 10;
+    let timerInterval;
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calcAnswer();
     let isCorrect = userAnswer === calculatedAnswer[0];
