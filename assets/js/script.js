@@ -83,9 +83,9 @@ function runTimer(){
 function verifyAnswer() {
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calcAnswer();
-    let userName = document.getElementById("username").value;
     let isCorrect = userAnswer === calculatedAnswer[0];
-    userName.addEventListener('input', function() {
+    let userName = document.getElementById("username").value;
+    /*  userName.addEventListener('input', function() {
         let value = userName.value();
         if (!value) {
            userName.value = 'Player';
@@ -93,7 +93,8 @@ function verifyAnswer() {
            userName.value = value;
         }
        });
-
+       */
+      
     if (isCorrect) {
        
         document.getElementById('feedback').innerHTML = `You submitted the correct answer ${userName}!`;
