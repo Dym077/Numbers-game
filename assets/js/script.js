@@ -1,9 +1,12 @@
 // Event listener - wait for the DOM to finish loading
 // Get button elements and add listeners
 
+let timerInterval;
+let timer = 10
+
+
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
-
     for (let button of buttons) {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "submit") {
@@ -22,24 +25,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     runGame("addition");
-timerInterval = setInterval(function () {
-    // Time will decrease by the second
-    timer -=1;
-    // Display remaining time
-    timer.innerHTML = timer;
-    if(timeLeft == 0) {
-        // Time stops when reaching zero
-        clearInterval(timerInterval);
-    }
-}, 1000);
-});
 
+});
 /**
  * This main game loop is called when script is loaded
  *and after the answer is processed.
  */
 
 function runGame(gameType) {
+    clearInterval(timerInterval);
 
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
@@ -60,21 +54,25 @@ function runGame(gameType) {
         alert(`Something amiss: ${gameType}`);
         throw `Something amiss: ${gameType}. Aborting`;
     }
-    
+    timerInterval = setInterval(function () {
+        // Time will decrease by the second
+        timer -=1;
+        // This will display time left
+        document.getElementById('timer').innerHTML = timer;
+        
+    }, 1000);
+   
 }
 
 /**
- * Checks the user answer during timer and returns a verification or the correct answer.
+ * Checks the user answer and returns a verification or the correct answer.
  */
 function verifyAnswer() {
-    let timer = 10;
-    let timerInterval;
-    
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calcAnswer();
     let isCorrect = userAnswer === calculatedAnswer[0];
-    
-    /*  userName.addEventListener('click', checkUsername() {
+    let userName = document.getElementById("username").value;
+    /*  userName.addEventListener('input', function() {
         let value = userName.value();
         if (!value) {
            userName.value = 'Player';
@@ -83,7 +81,7 @@ function verifyAnswer() {
         }
        });
        */
-      
+
     if (isCorrect) {
        
         document.getElementById('feedback').innerHTML = `You submitted the correct answer ${userName}!`;
@@ -100,8 +98,11 @@ function verifyAnswer() {
         document.getElementById('feedback').innerHTML = '';
         runGame(calculatedAnswer[1]);
     }, 3000);
-
-    }
+    clearInterval(timerInterval);
+    // This will reset the timer
+    timer = 10;
+}
+    
 
 
 
