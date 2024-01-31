@@ -61,10 +61,10 @@ function runGame(gameType) {
         if (timer <=0) {
             clearInterval(timerInterval);
             document.getElementById('feedback').innerHTML = `Your time is up! ${userName}. The correct answer should be ${calculatedAnswer[0]}!`;
-        incrementWrongAnswer();
-            timer =10;
+            incrementWrongAnswer();
+        // This resets the timer
+            timer = 10;
         }
-        
     }, 1000);
    
 }
