@@ -64,16 +64,17 @@ function runGame(gameType) {
 }
 
 /**
- * Checks the user answer and returns a verification or the correct answer.
+ * Checks the user answer during timer and returns a verification or the correct answer.
  */
 function verifyAnswer() {
     let timer = 10;
     let timerInterval;
+    
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calcAnswer();
     let isCorrect = userAnswer === calculatedAnswer[0];
-    let userName = document.getElementById("username").value;
-    /*  userName.addEventListener('input', function() {
+    
+    /*  userName.addEventListener('click', checkUsername() {
         let value = userName.value();
         if (!value) {
            userName.value = 'Player';
