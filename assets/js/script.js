@@ -54,9 +54,16 @@ function runGame(gameType) {
     }
     timerInterval = setInterval(function () {
         // Time will decrease by the second
-        timer -=1;
+        timer --;
         // This will display time left
         document.getElementById('timer').innerHTML = timer;
+        //When timer reaches 0
+        if (timer <=0) {
+            clearInterval(timerInterval);
+            document.getElementById('feedback').innerHTML = `Your time is up! ${userName}. The correct answer should be ${calculatedAnswer[0]}!`;
+        incrementWrongAnswer();
+            timer =10;
+        }
         
     }, 1000);
    
