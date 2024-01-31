@@ -24,8 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
         } 
     });
 
-    runGame("addition");
-
 });
 /**
  * This main game loop is called when script is loaded
