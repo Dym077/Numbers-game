@@ -63,15 +63,15 @@ function runGame(gameType) {
         if (timer <=0) {
             clearInterval(timerInterval);
             document.getElementById('feedback').innerHTML = `Your time is up! ${userName}. The correct answer should be ${calculatedAnswer[0]}!`;
-        incrementWrongAnswer();
+            incrementWrongAnswer();
             // This will reset the timer
-            timer = 10;    
+            timer = 10;
+            // A new game will start
+            runGame(gameType);
         }
   
     }, 1000);
-    if (timer <= 0) {
-        runGame(gameType);
-    }
+    
 }
 
 /**
@@ -154,7 +154,9 @@ function incrementScore() {
     resetGame();
     }
 }
+
 // This function resets the game
+
 function resetGame() {
     clearInterval(timerInterval);
     timer = 10;
@@ -162,6 +164,7 @@ function resetGame() {
     document.getElementById("wrong").innerText = 0;
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
+
 }
 /**
  * Get the current tally of the incorrect answers from the DOM and increments it by 1.
