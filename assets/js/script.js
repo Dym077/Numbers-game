@@ -147,15 +147,21 @@ function incrementScore() {
 
     let prevScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++prevScore;
-    if (prevScore >= 20) {
+    if (prevScore >= 2) {
         setTimeout(()=>{
-        
             document.getElementById('feedback').innerHTML = `Congratulations! You reached  ${prevScore} points ${userName}!`;
         }, 2000);
-        clearInterval(timerInterval);
     resetGame();
-    timer = 10;
     }
+}
+// This function resets the game
+function resetGame() {
+    clearInterval(timerInterval);
+    timer = 10;
+    document.getElementById("score").innerText = 0;
+    document.getElementById("wrong").innerText = 0;
+    document.getElementById("answer-box").value = "";
+    document.getElementById("answer-box").focus();
 }
 /**
  * Get the current tally of the incorrect answers from the DOM and increments it by 1.
