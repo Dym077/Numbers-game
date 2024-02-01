@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
  * This main game loop is called when script is loaded
  *and after the answer is processed.
  */
+let userName;
+let calculatedAnswer;
 
 function runGame(gameType) {
     clearInterval(timerInterval);
@@ -61,12 +63,15 @@ function runGame(gameType) {
         if (timer <=0) {
             clearInterval(timerInterval);
             document.getElementById('feedback').innerHTML = `Your time is up! ${userName}. The correct answer should be ${calculatedAnswer[0]}!`;
-            incrementWrongAnswer();
-        // This resets the timer
-            timer = 10;
+        incrementWrongAnswer();
+            // This will reset the timer
+            timer = 10;    
         }
+  
     }, 1000);
-   
+    if (timer <= 0) {
+        runGame(gameType);
+    }
 }
 
 /**
@@ -141,7 +146,16 @@ function calcAnswer() {
 function incrementScore() {
 
     let prevScore = parseInt(document.getElementById("score").innerText);
-document.getElementById("score").innerText = ++prevScore;
+    document.getElementById("score").innerText = ++prevScore;
+    if (prevScore >= 20) {
+        setTimeout(()=>{
+        
+            document.getElementById('feedback').innerHTML = `Congratulations! You reached  ${prevScore} points ${userName}!`;
+        }, 2000);
+        clearInterval(timerInterval);
+    resetGame();
+    timer = 10;
+    }
 }
 /**
  * Get the current tally of the incorrect answers from the DOM and increments it by 1.
