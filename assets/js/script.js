@@ -158,9 +158,9 @@ function resetGame() {
  */
 
 function incrementWrongAnswer() {
-    let prevScore = parseInt(document.getElementById("wrong").innerText);
-    document.getElementById("wrong").innerText = ++prevScore;
-    if (prevScore <= 20) {
+    let prevWrong = parseInt(document.getElementById("wrong").innerText);
+    document.getElementById("wrong").innerText = ++prevWrong;
+    if (prevWrong = 20) {
         setTimeout(()=>{
             document.getElementById('feedback').innerHTML = `You lost ${userName}! Better luck next time!`;
         }, 2000);
