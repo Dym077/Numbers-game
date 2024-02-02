@@ -56,14 +56,17 @@ function runGame(gameType) {
         throw `Something amiss: ${gameType}. Aborting`;
     }
     timerInterval = setInterval(function () {
-        // Time will decrease by the second
+        // Time will decrease by one each second
         timer --;
         // This will display time left
         document.getElementById('timer').innerHTML = timer;
         //When timer reaches 0
         if (timer <= 0) {
             clearInterval(timerInterval);
-            document.getElementById('feedback').innerHTML = `Your time is up! ${userName}. The correct answer should be ${calculatedAnswer[0]}!`;
+            setTimeout(function() {
+                runGame(gameType);
+            }, 3000);
+            document.getElementById('feedback').innerHTML = `Your time is up! ${userName}!`;
             incrementWrongAnswer();
             // A new game will start
             runGame(gameType);
@@ -161,7 +164,7 @@ function resetGame() {
 function incrementWrongAnswer() {
     let prevWrong = parseInt(document.getElementById("wrong").innerText);
     document.getElementById("wrong").innerText = ++prevWrong;
-    if (prevWrong = 20) {
+    if (prevWrong >= 20) {
         setTimeout(()=>{
             document.getElementById('feedback').innerHTML = `You lost ${userName}! Better luck next time!`;
         }, 2000);
