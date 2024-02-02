@@ -34,6 +34,7 @@ let calculatedAnswer;
 
 function runGame(gameType) {
     clearInterval(timerInterval);
+    timer = 10;
 
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
@@ -60,14 +61,14 @@ function runGame(gameType) {
         // This will display time left
         document.getElementById('timer').innerHTML = timer;
         //When timer reaches 0
-        if (timer <=0) {
+        if (timer <= 0) {
             clearInterval(timerInterval);
             document.getElementById('feedback').innerHTML = `Your time is up! ${userName}. The correct answer should be ${calculatedAnswer[0]}!`;
             incrementWrongAnswer();
-            // This will reset the timer
-            timer = 10;
             // A new game will start
             runGame(gameType);
+            // This will reset the timer
+            timer = 10;
         }
   
     }, 1000);
