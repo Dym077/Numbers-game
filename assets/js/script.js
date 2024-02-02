@@ -147,15 +147,15 @@ function incrementScore() {
 
     let prevScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++prevScore;
-    if (prevScore >= 2) {
+    if (prevScore >= 20) {
         setTimeout(()=>{
             document.getElementById('feedback').innerHTML = `Congratulations! You reached  ${prevScore} points ${userName}!`;
         }, 2000);
-    resetGame();
+        resetGame();
     }
 }
 
-// This function resets the game
+/* This function resets the game
 
 function resetGame() {
     clearInterval(timerInterval);
@@ -173,6 +173,12 @@ function resetGame() {
 function incrementWrongAnswer() {
     let prevScore = parseInt(document.getElementById("wrong").innerText);
     document.getElementById("wrong").innerText = ++prevScore;
+    if (prevScore <= 20) {
+        setTimeout(()=>{
+            document.getElementById('feedback').innerHTML = `You lost! Better luck next time ${userName}!`;
+        }, 2000);
+        resetGame();
+    }
 }
 
 function dispAddQuestion(operand1, operand2) {
