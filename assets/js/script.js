@@ -81,23 +81,13 @@ function verifyAnswer() {
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calcAnswer();
     let isCorrect = userAnswer === calculatedAnswer[0];
-    let userName = document.getElementById("username").value;
-    /*  userName.addEventListener('input', function() {
-        let value = userName.value();
-        if (!value) {
-           userName.value = 'Player';
-        } else {
-           userName.value = value;
-        }
-       });
-       */
+    let userNameInput = document.getElementById("username");
+    let userName = userNameInput.value ? userNameInput.value : "Player";
 
     if (isCorrect) {
-       
-        document.getElementById('feedback').innerHTML = `You submitted the correct answer ${userName}!`;
+       document.getElementById('feedback').innerHTML = `You submitted the correct answer ${userName}!`;
         incrementScore();
     } else {
-        
         document.getElementById('feedback').innerHTML = `Your answer is ${userAnswer} ${userName}. The correct answer should be ${calculatedAnswer[0]}!`;
         incrementWrongAnswer();
     }
@@ -113,9 +103,6 @@ function verifyAnswer() {
     timer = 10;
 }
     
-
-
-
 function calcAnswer() {
 
     /**
@@ -175,7 +162,7 @@ function incrementWrongAnswer() {
     document.getElementById("wrong").innerText = ++prevScore;
     if (prevScore <= 20) {
         setTimeout(()=>{
-            document.getElementById('feedback').innerHTML = `You lost! Better luck next time ${userName}!`;
+            document.getElementById('feedback').innerHTML = `You lost ${userName}! Better luck next time!`;
         }, 2000);
         resetGame();
     }
