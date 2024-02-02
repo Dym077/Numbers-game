@@ -142,7 +142,7 @@ function incrementScore() {
     }
 }
 
-/* This function resets the game
+// This function resets the game
 
 function resetGame() {
     clearInterval(timerInterval);
