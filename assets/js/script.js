@@ -22,8 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.key === "Enter") {
             verifyAnswer();
         } 
+        
     });
+    document.getElementById("username").addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
 
+        }
+    });
 });
 /**
  * This main game loop is called when script is loaded
