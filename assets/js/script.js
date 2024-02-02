@@ -85,10 +85,10 @@ function verifyAnswer() {
     let userName = userNameInput.value ? userNameInput.value : "Player";
 
     if (isCorrect) {
-       document.getElementById('feedback').innerHTML = `You submitted the correct answer ${userName}!`;
+       document.getElementById('feedback').innerHTML = `You submitted the correct answer, ${userName}!`;
         incrementScore();
     } else {
-        document.getElementById('feedback').innerHTML = `Your answer is ${userAnswer} ${userName}. The correct answer should be ${calculatedAnswer[0]}!`;
+        document.getElementById('feedback').innerHTML = `Your answer is ${userAnswer}, ${userName}. The correct answer should be ${calculatedAnswer[0]}!`;
         incrementWrongAnswer();
     }
     /** 

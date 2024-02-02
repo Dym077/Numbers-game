@@ -27,7 +27,10 @@ Numbers World is a simple and easy-to-play web based game which allows the playe
 - To provide an easily accessible user interface.
 
 ## How to play
-- "Number's world" allows the user to choose between the four calculation methods and solve randomly selected mathematical problems. Before starting the game, the user van choose to enter a username, but if the input field is left empty, the user will be addressed as "Player". The user can submit the solution in the answer box and will get feedback from the game accordingly. If the user has submitted the correct answer, the feedback will read "You submitted the correct answer" If the user should submit an incorrect answer, the feedback will then read for example "Your answer is 24. The correct answer should be 25". The feed back will be visible for three seconds and then the next question will be displayed.
+- "Number's world" allows the user to choose between the four calculation methods and solve randomly selected mathematical problems. Before starting the game, the user can choose to enter a username, but if the input field is left empty, the user will be addressed as "Player". The user can submit the solution in the answer box and will get feedback from the game accordingly. If the user has submitted the correct answer, the feedback will read "You submitted the correct answer, Player" If the user should submit an incorrect answer, the feedback will then read for example "Your answer is 24, Player The correct answer should be 25". The feed back will be visible for three seconds and then the next question will be displayed.
+
+### Game Over - You win/ lose
+- When the player has scored 20 correct answers, the game will declare "Congratulations! You reached 20 points Player!" After that, the game will reset and the player can play another game, choosing another calculation method. If the player should get 20 incorrect answers, before scoring 20 correct answers, the game will instead declare "You lost, Player! Better luck next time!"
 
 ## User Stories
 
@@ -95,11 +98,8 @@ The landing page consists of a heading, a game section and a score section. The 
 - In this section, the player can keep score of the progress of the game. The section consists of two areas - the "Correct"-area and the "Incorrect"-area. Every time the player submits a correct answer, the value in the "Correct"-area increases by "1". Every time the player submits an incorrect answer, the value in the "Incorrect"-area increases by "1". The values in the "Correct"-area has a green colour and the values in the "Incorrect"-area has a red colour.
 
 ### Features Left to Implement
-- A feature which allows the player to guess the calculation method by looking att the operands and the solution.
-- A timer that allows the player to find the right solution during limited time. 
-- An option for the player to enter a username so that the game can 'interact' with the player. 
-- A time lilit or a limited number of questions that ups the stakes and makes the game more challenging.
-- A message that tells the player 'You win/ lose!' 
+- A feature which allows the player to guess the calculation method by looking at the operands and the solution.
+- Difficulty levels which makes the timer run faster, or the player needing to get more correct answers to win the game.
 
 ## Testing
 
