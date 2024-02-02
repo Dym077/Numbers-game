@@ -62,11 +62,10 @@ function runGame(gameType) {
         document.getElementById('timer').innerHTML = timer;
         //When timer reaches 0
         if (timer <= 0) {
+            setTimeout(()=>{
+                document.getElementById('feedback').innerHTML = `Your time is up!`;
+            }, 1000);
             clearInterval(timerInterval);
-            setTimeout(function() {
-                runGame(gameType);
-            }, 3000);
-            document.getElementById('feedback').innerHTML = `Your time is up! ${userName}!`;
             incrementWrongAnswer();
             // A new game will start
             runGame(gameType);
