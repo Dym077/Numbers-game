@@ -164,9 +164,10 @@ function incrementWrongAnswer() {
     let prevWrong = parseInt(document.getElementById("wrong").innerText);
     document.getElementById("wrong").innerText = ++prevWrong;
     if (prevWrong >= 20) {
+        document.getElementById('feedback').innerHTML = `You lost ${userName}! Better luck next time!`;
         setTimeout(()=>{
-            document.getElementById('feedback').innerHTML = `You lost ${userName}! Better luck next time!`;
         }, 2000);
+        clearInterval(timerInterval);
         resetGame();
     }
 }
