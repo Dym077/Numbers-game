@@ -145,7 +145,7 @@ function incrementScore() {
     if (prevScore >= 20) {
         setTimeout(()=>{
             document.getElementById('feedback').innerHTML = `Congratulations! You reached  ${prevScore} points ${userName}!`;
-        }, 2000);
+        }, 3000);
         resetGame();
     }
 }
@@ -171,7 +171,7 @@ function incrementWrongAnswer() {
     if (prevWrong >= 20) {
         document.getElementById('feedback').innerHTML = `You lost ${userName}! Better luck next time!`;
         setTimeout(()=>{
-        }, 2000);
+        }, 3000);
         clearInterval(timerInterval);
         resetGame();
     }
