@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-
+    document.getElementById('user-submit').style.display = 'none';
     document.getElementById("answer-box").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
             verifyAnswer();
