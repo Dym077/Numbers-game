@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("username").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
             let userName = this.value ? this.value : "Player";
-            document.getElementById('feedback').innerHTML = `Hello, ${userName}! Let the game begin!`;
+            document.getElementById('feedback').innerHTML = `OK, ${userName}! Let the game begin!`;
             setTimeout(()=>{
                 document.getElementById('feedback').innerHTML = '';
             }, 2000);
@@ -151,8 +151,8 @@ function incrementScore() {
         document.getElementById('feedback').innerHTML = `Congratulations! You reached  ${prevScore} points ${userName}!`;
         setTimeout(()=>{
             document.getElementById('feedback').innerHTML = '';
-        }, 3000);
-        resetGame();
+            resetGame();
+        }, 3000);  
     }
 }
 
