@@ -176,10 +176,10 @@ function incrementWrongAnswer() {
     document.getElementById("wrong").innerText = ++prevWrong;
     if (prevWrong >= 20) {
         document.getElementById('feedback').innerHTML = `You lost ${userName}! Better luck next time!`;
-        setTimeout(()=>{
+            document.getElementById('feedback').innerHTML = '';
+            setTimeout(()=>{    
+            resetGame();
         }, 3000);
-        clearInterval(timerInterval);
-        resetGame();
     }
 }
 
