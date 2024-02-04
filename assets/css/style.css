@@ -1,4 +1,4 @@
-/* Global */
+/* Global  To do: Adjust the styling so the game is more responsive on multiple devices*/
 
 body {
     background-color: rgb(255, 208, 0);
@@ -20,6 +20,10 @@ body {
 }
 
 /* Layout */
+
+.user-input {
+margin-top: auto;
+}
 
 .game-section {
     background-color: #d5d9dd;
@@ -54,6 +58,12 @@ padding: 0 15px;
     width: 85%;
     margin: 30px auto;
     height: 160px;
+}
+
+#countDown {
+    font-size: 70%;
+    font-weight:lighter;
+    
 }
 
 #score {
@@ -224,6 +234,11 @@ padding: 0 15px;
 }
 
 @media (max-width: 320px) {
+
+    .user-input {
+        width: 75%;
+        margin: 10px auto;
+    }
     .game-section {
         height: 70vh;
     }
