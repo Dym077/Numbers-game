@@ -170,6 +170,7 @@ No user has reported any problems with the game.
 
 ### Known Bugs
 - When timer reaches 0, the "Your time is up!"-message displays forever - it should only be visible for one second.
+- When the player reaches the highest score or gets 20 wrong answers, which is 20, the game should reset and the timer stop. At the moment, this doesn't happen.
 - The game throws an alert when the user submits the username: "Something amiss!"
 
 
