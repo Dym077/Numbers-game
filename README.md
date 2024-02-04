@@ -90,8 +90,10 @@ The landing page consists of a heading, a game section and a score section. The 
 ### Game Section
 ![Game section](documentation/game_section.png)
 
-- In the game section there are four buttons which gives the user the opportunity to choose between the four calculation methods. Below the buttons you find the randomly generated numbers together with the calculation method of choice. To the right you find the answer-box in which you can type the answer. The player can dial in the answer either with the keyboard or by using the arrows in the answer-box. To submit the answer the player can either click the "submit"button or hit "enter" on the keyboard. A feedback text will appear on the screen, displaying feedback to the user. A timeout of three seconds will engage before another challenge will appear. When the player wants to change calculation method, it's easily done by clicking another of the four buttons displaying the methods.
-![Correct answer](documentation/correct_answer.png)
+- In the game section there are four buttons which gives the user the opportunity to choose between the four calculation methods. Below the buttons you find the randomly generated numbers together with the calculation method of choice. To the right you find the answer-box in which you can type the answer. The player can dial in the answer either with the keyboard or by using the arrows in the answer-box. To submit the answer the player can either click the "submit" button or hit "enter" on the keyboard. A feedback text will appear on the screen, displaying feedback to the user. A timeout of three seconds will engage before another challenge will appear. When the player wants to change calculation method, it's easily done by clicking another of the four buttons displaying the methods. The following feedback message will be displayed when the user submits the correct answer in the answer box:
+![Correct answer](documentation/correct_player.png)
+The following feedback message will be displayed when the user submits the incorrect answer in the answer box:
+![Incorrect Answer](documentation/incorrect_player.png)
 
 #### Score section
 ![Score section](documentation/score_section.png)
@@ -150,6 +152,7 @@ These warnings cause no trouble in the functionality of the game so they are lef
 
 ### Input Testing
 - When the player inputs the answer into the answer-box, the feedback text will return feedback to the user, either confirming the users correct answer or telling the player what the correct answer should be. If the player has not put an answer in the answer-box and clicks "submit" the feedback will tel the player that the answer is NAN, followed by the correct answer.
+![Answer is NAN](documentation/answer_nan.png)
 
 ### Button Testing
 - When hovering over the buttons with the mouse, the colours will change slightly to indicate that the player is about to choose the particular option the button provides. When clicked, the buttons with the calculation methods instantly will provide random numbers. When the "submit"-button is clicked, the game will return feedback to the player. All buttons have been tested and work properly. 
@@ -166,7 +169,7 @@ These warnings cause no trouble in the functionality of the game so they are lef
 No user has reported any problems with the game.
 
 ### Known Bugs
-- No known bugs.
+- When timer reaches 0, the "Your time is up!"-message displays forever - it should only be visible for one second.
 - The game throws an alert when the user submits the username: "Something amiss!"
 
 
