@@ -26,7 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     document.getElementById("username").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
-
+            let userName = this.value ? this.value : "Player";
+            document.getElementById('feedback').innerHTML = `Hello, ${userName}! Let the game begin!`;
+            setTimeout(()=>{
+                document.getElementById('feedback').innerHTML = '';
+            }, 2000);
         }
     });
 });
@@ -67,8 +71,9 @@ function runGame(gameType) {
         document.getElementById('timer').innerHTML = timer;
         //When timer reaches 0
         if (timer <= 0) {
+            document.getElementById('feedback').innerHTML = `Your time is up!`;
             setTimeout(()=>{
-                document.getElementById('feedback').innerHTML = `Your time is up!`;
+                document.getElementById('feedback').innerHTML = '';
             }, 1000);
             clearInterval(timerInterval);
             incrementWrongAnswer();
@@ -143,8 +148,9 @@ function incrementScore() {
     let prevScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++prevScore;
     if (prevScore >= 20) {
+        document.getElementById('feedback').innerHTML = `Congratulations! You reached  ${prevScore} points ${userName}!`;
         setTimeout(()=>{
-            document.getElementById('feedback').innerHTML = `Congratulations! You reached  ${prevScore} points ${userName}!`;
+            document.getElementById('feedback').innerHTML = '';
         }, 3000);
         resetGame();
     }
