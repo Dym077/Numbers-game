@@ -169,11 +169,18 @@ padding: 0 15px;
 .button--submit {
     border-color: rgb(140, 139, 138);
     color: rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: rgb(28, 107, 38);
 }
 .button--submit:active,
 .button--submit:hover {
-    background-color: rgb(157, 157, 156);
+
     color: white;
+}
+
+.button-disabled {
+    background-color: red !important;
+    cursor: not-allowed !important;
 }
 
 /* Media queries for different machines */

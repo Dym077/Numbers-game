@@ -3,7 +3,7 @@
 
 let timerInterval;
 let timer = 10
-
+let userName;
 
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
@@ -19,6 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     document.getElementById('user-submit').style.display = 'none';
     document.getElementById("answer-box").addEventListener("keydown", function(event) {
+        let userAnswer = parseInt(document.getElementById("answer-box").value);
+        if(isNaN(userAnswer)){
+            document.getElementById('feedback').innerHTML = `You must enter a number in the answer box`;
+            document.getElementById('submit').classList.add('button-disabled');
+        } else{
+            document.getElementById('submit').classList.remove('button-disabled');
+            document.getElementById('feedback').innerHTML = '';
+        }
         if (event.key === "Enter") {
             verifyAnswer();
         } 
@@ -26,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     document.getElementById("username").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
-            let userName = this.value ? this.value : "Player";
+            userName = this.value ? this.value : "Player";
             document.getElementById('feedback').innerHTML = `OK, ${userName}! Let the game begin!`;
             setTimeout(()=>{
                 document.getElementById('feedback').innerHTML = '';
@@ -38,9 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
  * This main game loop is called when script is loaded
  *and after the answer is processed.
  */
-let userName;
-let calculatedAnswer;
 
+let calculatedAnswer;
 function runGame(gameType) {
     clearInterval(timerInterval);
     timer = 10;
@@ -95,25 +102,32 @@ function verifyAnswer() {
     let calculatedAnswer = calcAnswer();
     let isCorrect = userAnswer === calculatedAnswer[0];
     let userNameInput = document.getElementById("username");
-    let userName = userNameInput.value ? userNameInput.value : "Player";
-
-    if (isCorrect) {
-       document.getElementById('feedback').innerHTML = `You submitted the correct answer, ${userName}!`;
-        incrementScore();
-    } else {
-        document.getElementById('feedback').innerHTML = `Your answer is ${userAnswer}, ${userName}. The correct answer should be ${calculatedAnswer[0]}!`;
-        incrementWrongAnswer();
+    userName = userNameInput.value ? userNameInput.value : "Player";
+    if(isNaN(userAnswer)){
+        document.getElementById('feedback').innerHTML = `You must enter a number in the answer box, ${userName}!`;
+        document.getElementById('submit').classList.add('button-disabled');
+    } else{
+        document.getElementById('submit').classList.remove('button-disabled');
+        if (isCorrect) {
+            document.getElementById('feedback').innerHTML = `You submitted the correct answer, ${userName}!`;
+             incrementScore();
+         } else {
+             document.getElementById('feedback').innerHTML = `Your answer is ${userAnswer}, ${userName}. The correct answer should be ${calculatedAnswer[0]}!`;
+             incrementWrongAnswer();
+         }
+         /** 
+          * Displays the feedback to the user for 3 seconds
+          */
+         setTimeout(()=>{
+             document.getElementById('feedback').innerHTML = '';
+             runGame(calculatedAnswer[1]);
+         }, 3000);
+         clearInterval(timerInterval);
+         // This will reset the timer
+         timer = 10;
     }
-    /** 
-     * Displays the feedback to the user for 3 seconds
-     */
-    setTimeout(()=>{
-        document.getElementById('feedback').innerHTML = '';
-        runGame(calculatedAnswer[1]);
-    }, 3000);
-    clearInterval(timerInterval);
-    // This will reset the timer
-    timer = 10;
+
+    
 }
     
 function calcAnswer() {
@@ -174,12 +188,12 @@ function resetGame() {
 function incrementWrongAnswer() {
     let prevWrong = parseInt(document.getElementById("wrong").innerText);
     document.getElementById("wrong").innerText = ++prevWrong;
-    if (prevWrong >= 20) {
+    if (prevWrong >= 5) {
         document.getElementById('feedback').innerHTML = `You lost ${userName}! Better luck next time!`;
-            document.getElementById('feedback').innerHTML = '';
-            setTimeout(()=>{    
+        setTimeout(()=>{    
             resetGame();
-        }, 3000);
+            document.getElementById('feedback').innerHTML = '';
+        }, 5000);
     }
 }
 
