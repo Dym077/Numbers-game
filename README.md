@@ -158,9 +158,12 @@ These warnings cause no trouble in the functionality of the game so they are lef
 
 
 ### Input Testing
-- When the player inputs the answer into the answer-box, the feedback text will return feedback to the user, either confirming the users correct answer or telling the player what the correct answer should be. If the player has not put an answer in the answer-box and clicks "submit" the feedback will tel the player that the answer is NAN, followed by the correct answer.
+- When the player inputs the answer into the answer-box, the feedback text will return feedback to the user, either confirming the users correct answer or telling the player what the correct answer should be. If the player has not put an answer in the answer-box, or types a letter or anything other than a number, the game will inform the player "You must enter a number in the answer box".
 ![Answer is NAN](documentation/answer_nan.png)
 
+-The "Submit" button is red until the player types a numner in the answer box, which will make it turn green. 
+![Submit red](documentation/submit_red.png)
+![Submit green](documentation/submit_green.png)
 ### Button Testing
 - When hovering over the buttons with the mouse, the colours will change slightly to indicate that the player is about to choose the particular option the button provides. When clicked, the buttons with the calculation methods instantly will provide random numbers. When the "submit"-button is clicked, the game will return feedback to the player. All buttons have been tested and work properly. 
 
