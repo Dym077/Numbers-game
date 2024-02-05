@@ -183,6 +183,12 @@ padding: 0 15px;
     cursor: not-allowed !important;
 }
 
+.instructions {
+    background-color: #d5d9dd;
+    box-sizing: border-box;
+    margin: 10px 400px;
+}
+
 /* Media queries for different machines */
 
 @media (max-width: 414px) {
