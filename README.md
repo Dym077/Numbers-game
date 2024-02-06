@@ -29,6 +29,10 @@ Numbers World is a simple and easy-to-play web based game which allows the playe
 ## How to play
 - "Number's world" allows the user to choose between the four calculation methods and solve randomly selected mathematical problems. Before starting the game, the user can choose to enter a username, but if the input field is left empty, the user will be addressed as "Player". The user can submit the solution in the answer box and will get feedback from the game accordingly. If the user has submitted the correct answer, the feedback will read "You submitted the correct answer, Player" If the user should submit an incorrect answer, the feedback will then read for example "Your answer is 24, Player The correct answer should be 25". The feed back will be visible for three seconds and then the next question will be displayed.
 
+### Instructions
+
+- The rules are very simple, but to clarify them, the instructions are displayed under the score section.
+![Instructions](documentation/instructions.png)
 ### Game Over - You win/ lose
 - When the player has scored 20 correct answers, the game will declare "Congratulations! You reached 20 points Player!" 
 ![Congratulations](documentation/congratulations.png)
