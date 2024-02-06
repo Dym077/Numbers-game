@@ -127,7 +127,6 @@ function verifyAnswer() {
         timer = 10;
     }
 
-
 }
 
 function calcAnswer() {

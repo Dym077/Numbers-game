@@ -197,6 +197,7 @@ These warnings cause no trouble in the functionality of the game so they are lef
 ### Browser Testing
 
 - The game is tested in Google Chrome, Safari and Microsoft Edge. No problems have been reported.
+  I have however noticed a slight text overflow when testing responiveness in Chrome devtools.
 
 ### Device Testing
 
@@ -205,9 +206,15 @@ No user has reported any problems with the game.
 
 ### Known Bugs
 
-- When the player types a one-digit number in the answer box, the game will sometimes throw "You must enter a number in the answer box".
-- When the player scores 20 points, the game should restart, but the timer keeps running for some reason.
-- When the player gets 5 wrong answers, the timer runs for a few seconds and then stops.
+- When the player types a one-digit number in the answer box, the game will throw "You must enter  
+  a number in the answer box".
+- When the player scores 20 points, the game should restart, but the timer keeps running for some 
+  reason.
+- When the player gets 5 wrong answers, the timer sometimes runs for a few seconds and then stops.
+
+### Fixed Bugs
+- When the player has 5 incorrect answers, the game is supposed to reset, which it now does.  
+  Before though, the timer kept running like in the above stated bug, where the player scores 20 points. 
 
 ## Technologies Used
 
