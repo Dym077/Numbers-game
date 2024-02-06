@@ -2,7 +2,7 @@
 // Get button elements and add listeners
 
 let timerInterval;
-let timer = 10
+let timer = 10;
 let userName;
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -18,25 +18,25 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
     document.getElementById('user-submit').style.display = 'none';
-    document.getElementById("answer-box").addEventListener("keydown", function(event) {
+    document.getElementById("answer-box").addEventListener("keydown", function (event) {
         let userAnswer = parseInt(document.getElementById("answer-box").value);
-        if(isNaN(userAnswer)){
+        if (isNaN(userAnswer)) {
             document.getElementById('feedback').innerHTML = `You must enter a number in the answer box`;
             document.getElementById('submit').classList.add('button-disabled');
-        } else{
+        } else {
             document.getElementById('submit').classList.remove('button-disabled');
             document.getElementById('feedback').innerHTML = '';
         }
         if (event.key === "Enter") {
             verifyAnswer();
-        } 
-        
+        }
+
     });
-    document.getElementById("username").addEventListener("keydown", function(event) {
+    document.getElementById("username").addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
             userName = this.value ? this.value : "Player";
             document.getElementById('feedback').innerHTML = `OK, ${userName}! Let the game begin!`;
-            setTimeout(()=>{
+            setTimeout(() => {
                 document.getElementById('feedback').innerHTML = '';
             }, 2000);
         }
@@ -66,20 +66,20 @@ function runGame(gameType) {
     } else if (gameType === "subtract") {
         dispSubQuestion(num1, num2);
     } else if (gameType === "division") {
-		dispDivQuestion(num1, num2);
-	} else {
+        dispDivQuestion(num1, num2);
+    } else {
         alert(`Something amiss: ${gameType}`);
         throw `Something amiss: ${gameType}. Aborting`;
     }
     timerInterval = setInterval(function () {
         // Time will decrease by one each second
-        timer --;
+        timer--;
         // This will display time left
         document.getElementById('timer').innerHTML = timer;
         //When timer reaches 0
         if (timer <= 0) {
             document.getElementById('feedback').innerHTML = `Your time is up!`;
-            setTimeout(()=>{
+            setTimeout(() => {
                 document.getElementById('feedback').innerHTML = '';
             }, 1000);
             clearInterval(timerInterval);
@@ -89,9 +89,9 @@ function runGame(gameType) {
             // This will reset the timer
             timer = 10;
         }
-  
+
     }, 1000);
-    
+
 }
 
 /**
@@ -103,41 +103,41 @@ function verifyAnswer() {
     let isCorrect = userAnswer === calculatedAnswer[0];
     let userNameInput = document.getElementById("username");
     userName = userNameInput.value ? userNameInput.value : "Player";
-    if(isNaN(userAnswer)){
+    if (isNaN(userAnswer)) {
         document.getElementById('feedback').innerHTML = `You must enter a number in the answer box, ${userName}!`;
         document.getElementById('submit').classList.add('button-disabled');
-    } else{
+    } else {
         document.getElementById('submit').classList.remove('button-disabled');
         if (isCorrect) {
             document.getElementById('feedback').innerHTML = `You submitted the correct answer, ${userName}!`;
-             incrementScore();
-         } else {
-             document.getElementById('feedback').innerHTML = `Your answer is ${userAnswer}, ${userName}. The correct answer should be ${calculatedAnswer[0]}!`;
-             incrementWrongAnswer();
-         }
-         /** 
-          * Displays the feedback to the user for 3 seconds
-          */
-         setTimeout(()=>{
-             document.getElementById('feedback').innerHTML = '';
-             runGame(calculatedAnswer[1]);
-         }, 3000);
-         clearInterval(timerInterval);
-         // This will reset the timer
-         timer = 10;
+            incrementScore();
+        } else {
+            document.getElementById('feedback').innerHTML = `Your answer is ${userAnswer}, ${userName}. The correct answer is ${calculatedAnswer[0]}!`;
+            incrementWrongAnswer();
+        }
+        /** 
+         * Displays the feedback to the user for 3 seconds
+         */
+        setTimeout(() => {
+            document.getElementById('feedback').innerHTML = '';
+            runGame(calculatedAnswer[1]);
+        }, 3000);
+        clearInterval(timerInterval);
+        // This will reset the timer
+        timer = 10;
     }
 
-    
+
 }
-    
+
 function calcAnswer() {
 
     /**
      * Gets operands and operator from DOM and retuns the answer
      */
-        let operand1 = parseInt(document.getElementById('operand1').innerText);
-        let operand2 = parseInt(document.getElementById('operand2').innerText);
-        let operator = document.getElementById('operator').innerText;
+    let operand1 = parseInt(document.getElementById('operand1').innerText);
+    let operand2 = parseInt(document.getElementById('operand2').innerText);
+    let operator = document.getElementById('operator').innerText;
 
     if (operator === "+") {
         return [operand1 + operand2, "addition"];
@@ -146,12 +146,12 @@ function calcAnswer() {
     } else if (operator === "-") {
         return [operand1 - operand2, "subtract"];
     } else if (operator === "/") {
-		return [operand1 / operand2, "division"];
-	} else { 
+        return [operand1 / operand2, "division"];
+    } else {
         alert(`operator not implemented)${operator}`);
         throw `operator not implemented ${operator}. Aborting`;
     }
-    
+
 }
 /**
  * Get the current score from the DOM and increments it by 1.
@@ -163,10 +163,10 @@ function incrementScore() {
     document.getElementById("score").innerText = ++prevScore;
     if (prevScore >= 20) {
         document.getElementById('feedback').innerHTML = `Congratulations! You reached  ${prevScore} points ${userName}!`;
-        setTimeout(()=>{
+        setTimeout(() => {
             document.getElementById('feedback').innerHTML = '';
             resetGame();
-        }, 3000);  
+        }, 3000);
     }
 }
 
@@ -190,7 +190,7 @@ function incrementWrongAnswer() {
     document.getElementById("wrong").innerText = ++prevWrong;
     if (prevWrong >= 5) {
         document.getElementById('feedback').innerHTML = `You lost ${userName}! Better luck next time!`;
-        setTimeout(()=>{    
+        setTimeout(() => {
             resetGame();
             document.getElementById('feedback').innerHTML = '';
         }, 5000);
@@ -223,9 +223,9 @@ function dispMultQuestion(operand1, operand2) {
 function dispDivQuestion(operand1, operand2) {
     operand1 = operand1 * operand2;
 
-	document.getElementById("operand1").textContent = operand1;
-	document.getElementById("operand2").textContent = operand2;
-	document.getElementById("operator").textContent = "/";
+    document.getElementById("operand1").textContent = operand1;
+    document.getElementById("operand2").textContent = operand2;
+    document.getElementById("operator").textContent = "/";
 
 
 }

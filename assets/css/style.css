@@ -7,6 +7,7 @@ body {
     text-align: center;
 
 }
+
 /* Heading */
 
 .heading {
@@ -22,7 +23,7 @@ body {
 /* Layout */
 
 .user-input {
-margin-top: auto;
+    margin-top: auto;
 }
 
 .game-section {
@@ -38,14 +39,14 @@ margin-top: auto;
 }
 
 .question-section {
-width: 50%;
-font-size: 1.3rem;
-margin: auto;
-padding: 50px 0;
+    width: 50%;
+    font-size: 1.3rem;
+    margin: auto;
+    padding: 50px 0;
 }
 
 .question-section span {
-padding: 0 15px;
+    padding: 0 15px;
 }
 
 .score-section {
@@ -62,8 +63,8 @@ padding: 0 15px;
 
 #countDown {
     font-size: 70%;
-    font-weight:lighter;
-    
+    font-weight: lighter;
+
 }
 
 #score {
@@ -73,7 +74,7 @@ padding: 0 15px;
 
 #wrong {
     color: #ec4509;
-    font-weight:lighter;
+    font-weight: lighter;
 }
 
 .answer-mobile {
@@ -113,7 +114,7 @@ padding: 0 15px;
 
 .button--big {
     border-radius: 10%;
-    background-color:  darkslategray;
+    background-color: darkslategray;
     border: 2px solid;
     width: 100px;
     height: 100px;
@@ -136,8 +137,8 @@ padding: 0 15px;
 }
 
 .button--green {
-    border-color:  rgb(192, 235, 51);
-    color:  rgb(254, 254, 254);
+    border-color: rgb(192, 235, 51);
+    color: rgb(254, 254, 254);
 }
 
 .button--green:active,
@@ -145,6 +146,7 @@ padding: 0 15px;
     background-color: rgb(28, 107, 38);
     color: black;
 }
+
 .button--gray {
     border-color: rgb(132, 132, 130);
     color: rgb(254, 254, 254);
@@ -155,6 +157,7 @@ padding: 0 15px;
     background-color: rgb(62, 62, 61);
     color: black;
 }
+
 .button--black {
     border-color: rgb(140, 139, 138);
     color: rgb(254, 254, 254);
@@ -172,6 +175,7 @@ padding: 0 15px;
     cursor: pointer;
     background-color: rgb(28, 107, 38);
 }
+
 .button--submit:active,
 .button--submit:hover {
 
@@ -187,6 +191,9 @@ padding: 0 15px;
     background-color: #d5d9dd;
     box-sizing: border-box;
     justify-content: center;
+    margin-left: 130px;
+    margin-right: 130px;
+    padding: 1%;
 }
 
 /* Media queries for different machines */
@@ -227,6 +234,7 @@ padding: 0 15px;
         display: block;
         margin: 0 auto;
     }
+
     .button--gray {
         margin-top: 8px;
     }
@@ -252,6 +260,7 @@ padding: 0 15px;
         width: 75%;
         margin: 10px auto;
     }
+
     .game-section {
         height: 70vh;
     }
@@ -264,9 +273,9 @@ padding: 0 15px;
     .button--big {
         margin: 10px 10px;
     }
+
     .question-area {
         padding: 10px 0;
     }
 
 }
-
