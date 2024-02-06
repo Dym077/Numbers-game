@@ -4,9 +4,17 @@
 let timerInterval;
 let timer = 10;
 let userName;
-let gameActive = true
+let gameActive = true;
 
 document.addEventListener("DOMContentLoaded", function () {
+    const controlButtons = document.querySelectorAll('.controls-section');
+    controlButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Set gameActive to true when control-section button is clicked
+            gameActive = true;
+           
+        });
+    });
     let buttons = document.getElementsByTagName("button");
     for (let button of buttons) {
         button.addEventListener("click", function () {
@@ -184,6 +192,8 @@ function resetGame() {
     document.getElementById("wrong").innerText = 0;
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
+    document.getElementById('operand1').innerText = 0;
+    document.getElementById('operand2').innerText = 0;
 
 }
 /**
