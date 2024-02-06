@@ -84,7 +84,7 @@ function runGame(gameType) {
             }, 1000);
             clearInterval(timerInterval);
             incrementWrongAnswer();
-            // A new game will start
+            // A new question will initiate
             runGame(gameType);
             // This will reset the timer
             timer = 10;
