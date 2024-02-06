@@ -4,6 +4,7 @@
 let timerInterval;
 let timer = 10;
 let userName;
+let gameActive = true
 
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
@@ -13,7 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 verifyAnswer();
             } else {
                 let gameType = this.getAttribute("data-type");
-                runGame(gameType);
+                if (gameActive) {
+                    runGame(gameType);
+                }
             }
         });
     }
@@ -55,42 +58,44 @@ function runGame(gameType) {
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
 
+    if (gameActive) {
     // num1 and num2 creates two random numbers between 1 and 25
-    let num1 = Math.floor(Math.random() * 25) + 1;
-    let num2 = Math.floor(Math.random() * 25) + 1;
+        let num1 = Math.floor(Math.random() * 25) + 1;
+        let num2 = Math.floor(Math.random() * 25) + 1;
 
-    if (gameType === "addition") {
-        dispAddQuestion(num1, num2);
-    } else if (gameType === "multiply") {
-        dispMultQuestion(num1, num2);
-    } else if (gameType === "subtract") {
-        dispSubQuestion(num1, num2);
-    } else if (gameType === "division") {
-        dispDivQuestion(num1, num2);
-    } else {
-        alert(`Something amiss: ${gameType}`);
-        throw `Something amiss: ${gameType}. Aborting`;
-    }
-    timerInterval = setInterval(function () {
-        // Time will decrease by one each second
-        timer--;
-        // This will display time left
-        document.getElementById('timer').innerHTML = timer;
-        //When timer reaches 0
-        if (timer <= 0) {
-            document.getElementById('feedback').innerHTML = `Your time is up!`;
-            setTimeout(() => {
-                document.getElementById('feedback').innerHTML = '';
-            }, 1000);
-            clearInterval(timerInterval);
-            incrementWrongAnswer();
-            // A new question will initiate
-            runGame(gameType);
-            // This will reset the timer
-            timer = 10;
+        if (gameType === "addition") {
+            dispAddQuestion(num1, num2);
+        } else if (gameType === "multiply") {
+            dispMultQuestion(num1, num2);
+        } else if (gameType === "subtract") {
+            dispSubQuestion(num1, num2);
+        } else if (gameType === "division") {
+            dispDivQuestion(num1, num2);
+        } else {
+            alert(`Something amiss: ${gameType}`);
+            throw `Something amiss: ${gameType}. Aborting`;
         }
+        timerInterval = setInterval(function () {
+            // Time will decrease by one each second
+            timer--;
+            // This will display time left
+            document.getElementById('timer').innerHTML = timer;
+            //When timer reaches 0
+            if (timer <= 0) {
+                document.getElementById('feedback').innerHTML = `Your time is up!`;
+                setTimeout(() => {
+                    document.getElementById('feedback').innerHTML = '';
+                }, 1000);
+                clearInterval(timerInterval);
+                incrementWrongAnswer();
+                // A new question will initiate
+                runGame(gameType);
+                // This will reset the timer
+                timer = 10;
+            }
 
-    }, 1000);
+        }, 1000);
+    }
 
 }
 
@@ -160,8 +165,9 @@ function incrementScore() {
 
     let prevScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++prevScore;
-    if (prevScore >= 20) {
+    if (prevScore >= 2) {
         document.getElementById('feedback').innerHTML = `Congratulations! You reached  ${prevScore} points ${userName}!`;
+        gameActive = false
         setTimeout(() => {
             resetGame();
             document.getElementById('feedback').innerHTML = '';
