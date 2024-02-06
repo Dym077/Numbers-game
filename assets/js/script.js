@@ -47,10 +47,10 @@ document.addEventListener("DOMContentLoaded", function () {
  *and after the answer is processed.
  */
 
-let calculatedAnswer;
 function runGame(gameType) {
     clearInterval(timerInterval);
     timer = 10;
+
 
     document.getElementById("answer-box").value = "";
     document.getElementById("answer-box").focus();
@@ -133,7 +133,7 @@ function verifyAnswer() {
 function calcAnswer() {
 
     /**
-     * Gets operands and operator from DOM and retuns the answer
+     * Gets operands and operator from DOM and returns the answer
      */
     let operand1 = parseInt(document.getElementById('operand1').innerText);
     let operand2 = parseInt(document.getElementById('operand2').innerText);
@@ -164,8 +164,8 @@ function incrementScore() {
     if (prevScore >= 20) {
         document.getElementById('feedback').innerHTML = `Congratulations! You reached  ${prevScore} points ${userName}!`;
         setTimeout(() => {
-            document.getElementById('feedback').innerHTML = '';
             resetGame();
+            document.getElementById('feedback').innerHTML = '';
         }, 3000);
     }
 }
