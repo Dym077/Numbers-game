@@ -63,6 +63,8 @@ body {
 #countDown {
     font-size: 70%;
     font-weight: lighter;
+    border: dotted;
+    border-radius: 8%;
 
 }
 
