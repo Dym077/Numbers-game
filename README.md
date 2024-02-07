@@ -94,11 +94,21 @@ After that, the game will reset and the player can play another game, choosing a
 
 ### Wireframes
 
+<details>
+
+<summary>Desktop wireframe</summary>
+
 - The wireframe was made with pen and paper.
 - This is the mockup for the desktop version:
 ![Mockup](documentation/20231215_180154.jpg)
+
+<summary>Mobile wireframe</summary>
+
 - This is the mockup for the mobile devices:
 ![Mockup](documentation/wireframe_mobile.png)
+
+<summary>New wireframe</summary>
+
 - The latest mockup including the timer and username sections:
 ![Mockup2](documentation/numbers-world-mockup2.jpg)
 
@@ -147,29 +157,51 @@ The following feedback message will be displayed when the user submits the incor
 #### Javascript
 
 - JavaScript code was tested with [JS Hint - link](https://jshint.com/) which returned 21 warnings.
- 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-7	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-7	'for of' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-12	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-8	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (verifyAnswer, runGame)
-39	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-40	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-51	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-52	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-60	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-61	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-62	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-70	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-74	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
-88	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-89	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-90	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-101	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-102	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-112	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-120	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 
-These warnings cause no trouble in the functionality of the game so they are left in there.
+<details>
+
+4	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+5	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+6	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+7	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+10	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+11	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+18	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+19	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+19	'for of' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+24	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+20	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (verifyAnswer, gameActive, runGame)
+33	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+35	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+49	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+50	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+71	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+72	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+83	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+84	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+93	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+94	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+114	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+115	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+116	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+117	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+120	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+125	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+128	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+134	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+150	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+151	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+152	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+163	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+164	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+174	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+177	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+179	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+204	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+207	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+208	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+
+- There is a potential reason for the timer acting strangely, due to the warning on line 172, which is also mentioned in the known bugs section.
   
 ### Accessibility
 
@@ -208,7 +240,8 @@ No user has reported any problems with the game.
 
 - When the player types a one-digit number in the answer box, the game will throw "You must enter  
   a number in the answer box".
-- The timer should reset to 10 after a finished game (when the score has reached 20 or 5 wrong answers have been submitted) but it resets to 9.
+- The timer should reset to 10 after a finished game (when the score has reached 20 or 5 wrong 
+  answers have been submitted) but it resets to 9. This could be an issue created by the code hinted at in the javaScript testing above. 
 
 ### Fixed Bugs
 - When the player has 5 incorrect answers, the game is supposed to reset, which it now does.  

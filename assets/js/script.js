@@ -175,7 +175,7 @@ function incrementScore() {
     document.getElementById("score").innerText = ++prevScore;
     if (prevScore >= 20) {
         document.getElementById('feedback').innerHTML = `Congratulations! You reached  ${prevScore} points ${userName}!`;
-        gameActive = false
+        gameActive = false;
         setTimeout(() => {
             resetGame();
             document.getElementById('feedback').innerHTML = '';
