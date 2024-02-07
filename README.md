@@ -173,7 +173,7 @@ These warnings cause no trouble in the functionality of the game so they are lef
   
 ### Accessibility
 
-- The site has achieved a Lighthouse accessibility score of 100% on both desktop and mobile devices.
+- The site has achieved a Lighthouse accessibility and best practices score of 100% on both desktop and mobile devices.
 ![Lighthouse -desktop](documentation/lighthouse.png)
 ![Lighthouse -mobile](documentation/lighthouse_mobile.png)
 
@@ -208,13 +208,12 @@ No user has reported any problems with the game.
 
 - When the player types a one-digit number in the answer box, the game will throw "You must enter  
   a number in the answer box".
-- When the player scores 20 points, the game should restart, but the timer keeps running for some 
-  reason.
-- When the player gets 5 wrong answers, the timer sometimes runs for a few seconds and then stops.
+- The timer should reset to 10 after a finished game (when the score has reached 20 or 5 wrong answers have been submitted) but it resets to 9.
 
 ### Fixed Bugs
 - When the player has 5 incorrect answers, the game is supposed to reset, which it now does.  
   Before though, the timer kept running like in the above stated bug, where the player scores 20 points. 
+- The operators didn't reset when game was finished.   
 
 ## Technologies Used
 
@@ -268,4 +267,4 @@ No user has reported any problems with the game.
 ## Acknowledgments
 
 - My mentor Antonio for his useful advice and support.
-- The Slack community of Code institute for their kind advice and support.
+- The Slack community and the tutors of Code institute for their kind advice and support.
