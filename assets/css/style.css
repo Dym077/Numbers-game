@@ -189,6 +189,7 @@ body {
 .instructions {
     background-color: #d5d9dd;
     box-sizing: border-box;
+    margin: 0px 40px;
     justify-content: center;
     padding: 1%;
 }
