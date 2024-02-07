@@ -102,15 +102,24 @@ After that, the game will reset and the player can play another game, choosing a
 - This is the mockup for the desktop version:
 ![Mockup](documentation/20231215_180154.jpg)
 
+</details>
+
+<details>
+
 <summary>Mobile wireframe</summary>
 
 - This is the mockup for the mobile devices:
 ![Mockup](documentation/wireframe_mobile.png)
 
+</details>
+<details>
+
 <summary>New wireframe</summary>
 
 - The latest mockup including the timer and username sections:
 ![Mockup2](documentation/numbers-world-mockup2.jpg)
+
+</details>
 
 ## Features
 
