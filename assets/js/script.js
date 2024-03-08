@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("username").addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
             userName = this.value ? this.value : "Player";
-            document.getElementById('feedback').innerHTML = `OK, ${userName}! Let the game begin!`;
+            document.getElementById('feedback').innerHTML = `Choose calculation method, ${userName}!`;
             setTimeout(() => {
                 document.getElementById('feedback').innerHTML = '';
             }, 2000);
