@@ -29,8 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
     document.getElementById('user-submit').style.display = 'none';
-    document.getElementById("answer-box").addEventListener("keydown", function (event) {
+    document.getElementById("answer-box").addEventListener("keyup", function (event) {
+        document.getElementById('feedback').innerHTML = '';
         let userAnswer = parseInt(document.getElementById("answer-box").value);
+        console.info(userAnswer);
         if (isNaN(userAnswer)) {
             document.getElementById('feedback').innerHTML = `You must enter a number in the answer box`;
             document.getElementById('submit').classList.add('button-disabled');
