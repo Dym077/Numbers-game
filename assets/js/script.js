@@ -118,6 +118,7 @@ function verifyAnswer() {
     let isCorrect = userAnswer === calculatedAnswer[0];
     let userNameInput = document.getElementById("username");
     userName = userNameInput.value ? userNameInput.value : "Player";
+    /* Tells the user to enter a number into the answer box */
     if (isNaN(userAnswer)) {
         document.getElementById('feedback').innerHTML = `You must enter a number in the answer box, ${userName}!`;
         document.getElementById('submit').classList.add('button-disabled');
@@ -178,6 +179,7 @@ function incrementScore() {
     if (prevScore >= 20) {
         document.getElementById('feedback').innerHTML = `Congratulations! You reached  ${prevScore} points ${userName}!`;
         gameActive = false;
+        /* The setTimeout function was originally a tip from my mentor Antonio */
         setTimeout(() => {
             resetGame();
             document.getElementById('feedback').innerHTML = '';

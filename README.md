@@ -94,8 +94,17 @@ After that, the game will reset and the player can play another game, choosing a
 
 - The layout of the page is divided into the following sections:
 
-* Game section
+- Game section
 - Score section
+
+#### The timer function
+
+A suggestion from a test player was to implement a timer to the game, which makes the stakes a bit higher and the game a little bit more challenging. To implement the timer was in itself a great challenge and I searched the web for some different solutions. My first attempt to use the timer resulted in that the timer seemed to run backwards forever until the user is reloading the page. Some great resources for this function were to be found here:
+- [W3CSchools - link](https://www.w3schools.com/jsref/met_win_setinterval.asp)
+- [MDN WEb Docs - link](https://developer.mozilla.org/en-US/docs/Web/API/setInterval)
+- [Stack Overflow - link](https://stackoverflow.com/questions/5978519/how-can-i-use-setinterval-and-clearinterval)
+
+Since there are alot of different methods of doing this, I decided to get help from a tutor at Code Institute, which would bring clarity to how the timer function best could be implemented. 
 
 ### Wireframes
 
@@ -314,5 +323,6 @@ No user has reported any problems with the game.
 
 ## Acknowledgments
 
+- Martin Degerman for his advice.
 - My mentor Antonio for his useful advice and support.
 - The Slack community and the tutors of Code institute for their kind advice and support.
