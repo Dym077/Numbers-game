@@ -172,10 +172,11 @@ The following feedback message will be displayed when the user submits the incor
 
 #### HTML
 
-- HTML code was validated using - [The W3C Markup Validator - link](https://validator.w3.org/nu>) which returned no errors or warnings.
+- HTML code was validated using - [The W3C Markup Validator - link](https://validator.w3.org/nu>) which returned no errors but one warning:
+![warning](documentation/warning.png)
 
 #### CSS
-  - The CSS was tested with - [The W3C CSS Jigsaw Validator - link](https://jigsaw.w3.org/css-validator/) which returned no errors but these warnings:
+  - The CSS was tested with - [The W3C CSS Jigsaw Validator - link](https://jigsaw.w3.org/css-validator/) which returned no errors or warnings.
 
 #### Javascript
 
