@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const controlButtons = document.querySelectorAll('.controls-section');
     controlButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Set gameActive to true when control-section button is clicked
+            // Set gameActive to true when control-section button is clicked - advice from tutor support.
             gameActive = true;
            
         });

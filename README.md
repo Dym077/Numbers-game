@@ -172,14 +172,14 @@ The following feedback message will be displayed when the user submits the incor
 
 #### HTML
 
-- HTML code was validated using [The W3C Markup Validator - link] (<https://validator.w3.org/nu>) which returned no errors or warnings.
+- HTML code was validated using - [The W3C Markup Validator - link](https://validator.w3.org/nu>) which returned no errors or warnings.
 
 #### CSS
-  - The CSS was tested with [The W3C CSS Jigsaw Validator - link](https://jigsaw.w3.org/css-validator/) and returned no errors or warnings.
+  - The CSS was tested with - [The W3C CSS Jigsaw Validator - link](https://jigsaw.w3.org/css-validator/) which returned no errors but these warnings:
 
 #### Javascript
 
-- JavaScript code was tested with [JS Hint - link](https://jshint.com/) which returned 21 warnings.
+- JavaScript code was tested with - [JS Hint - link](https://jshint.com/) which returned 40 warnings.
 
 <details>
 
@@ -194,35 +194,35 @@ The following feedback message will be displayed when the user submits the incor
 19	'for of' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 24	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 20	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (verifyAnswer, gameActive, runGame)
-33	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-35	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-49	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-50	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
-71	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-72	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-83	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-84	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-93	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-94	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
-114	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-115	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+34	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+37	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+51	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+52	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+73	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+74	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+85	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+86	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+95	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+96	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
 116	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 117	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-120	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-125	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+118	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+119	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+123	'template literal syntax' is only available in ES6 (use 'esversion: 6').
 128	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-134	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
-150	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-151	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-152	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-163	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-164	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-174	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-177	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-179	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
-204	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-207	'template literal syntax' is only available in ES6 (use 'esversion: 6').
-208	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+131	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+137	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+153	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+154	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+155	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+166	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+167	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+177	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+180	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+183	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+208	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+211	'template literal syntax' is only available in ES6 (use 'esversion: 6').
+212	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
 
 </details>
 - There is a potential reason for the timer acting strangely, due to the warning on line 172, which is also mentioned in the known bugs section.
