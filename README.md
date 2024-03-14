@@ -263,12 +263,12 @@ No user has reported any problems with the game.
 
 ### Known Bugs
 
-- When the player types a one-digit number in the answer box, the game will throw "You must enter  
-  a number in the answer box".
 - The timer should reset to 10 after a finished game (when the score has reached 20 or 5 wrong 
-  answers have been submitted) but it resets to 9. This could be an issue created by the code hinted at in the javaScript testing above. 
+  answers have been submitted) but it resets to 9. This could be an issue created by the code hinted at in the javaScript testing above. After consulting the support group, we managed to get the timer to reset, which was a great success for me, as the timer would keep counting down forever when I first implemented it.
 
 ### Fixed Bugs
+- When the player typed a one-digit number in the answer box, the game would throw "You must enter  
+  a number in the answer box". 
 - When the player has 5 incorrect answers, the game is supposed to reset, which it now does.  
   Before though, the timer kept running like in the above stated bug, where the player scores 20 points. 
 - The operators didn't reset when game was finished.   
@@ -324,6 +324,6 @@ No user has reported any problems with the game.
 
 ## Acknowledgments
 
-- Martin Degerman for his advice.
+- Martin Degerman for his advice on the timer implementation and general javaScript handling.
 - My mentor Antonio for his useful advice and support.
 - The Slack community and the tutors of Code institute for their kind advice and support.

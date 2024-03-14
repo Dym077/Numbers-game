@@ -45,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
     });
+     // This is where the player is prompted to choose calculation method
+     
     document.getElementById("username").addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
             userName = this.value ? this.value : "Player";
