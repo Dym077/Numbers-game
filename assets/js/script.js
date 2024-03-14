@@ -87,6 +87,7 @@ function runGame(gameType) {
             alert(`Something amiss: ${gameType}`);
             throw `Something amiss: ${gameType}. Aborting`;
         }
+        // Timer function was inspired by this tutorial : https://www.youtube.com/watch?v=qrtLGK_8S1Y
         timerInterval = setInterval(function () {
             // Time will decrease by one each second
             timer--;

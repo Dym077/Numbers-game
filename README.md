@@ -312,8 +312,8 @@ No user has reported any problems with the game.
 Button layout and score section are implemented using the structure fron this walkthrough. 
 - The addition of an optional username was later added to the game. Mainly, the option of choosing a username is to add a more personal feel to the 
 gaming experience. In future versions of this project, this could also provide for a high-score section. 
-- The timer function was implemented using a variety of sources, from articles on [Stack Overflow](https://stackoverflow.com/), [W3Schools](https://www.w3schools.com/) and Youtube tutorials. 
-Eventually, I contacted the support group of Code Institute to find the help necessary to get the timer to work properly within the game. 
+- The timer function was implemented using a variety of sources, from articles on [Stack Overflow](https://stackoverflow.com/), [W3Schools](https://www.w3schools.com/), my fellow students in the Slack Community and Youtube tutorials. This was the the most challenging feature to add to this project.
+Eventually, I contacted the support group of Code Institute to find the help necessary to get the timer to work properly within the game. We implemented the gameActive function so there were no conflicts in with the timerinterval still running when the player was starting a new game. 
 
 
 ### Media
