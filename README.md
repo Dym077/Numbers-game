@@ -264,11 +264,12 @@ No user has reported any problems with the game.
 ### Known Bugs
 
 - The timer should reset to 10 after a finished game (when the score has reached 20 or 5 wrong 
-  answers have been submitted) but it resets to 9. This could be an issue created by the code hinted at in the javaScript testing above. After consulting the support group, we managed to get the timer to reset, which was a great success for me, as the timer would keep counting down forever when I first implemented it.
+  answers have been submitted) but it resets to 9. This could be an issue created by the code hinted at in the javaScript testing above. After consulting the support group, we managed to get the timer to reset, which was a great success for me, as the timer would keep counting down forever when I first implemented it. Ultimately, this reset doesn't affect the overall user experience, as the game will be finished by this moment. 
 
 ### Fixed Bugs
 - When the player typed a one-digit number in the answer box, the game would throw "You must enter  
-  a number in the answer box". 
+  a number in the answer box". This was caused by an eventlistener "keydown", which caused the feedback to be displayed to the user prematurely.
+  When changing the eventlistener to "keyup" instead, the feedback was displayed as intended.
 - When the player has 5 incorrect answers, the game is supposed to reset, which it now does.  
   Before though, the timer kept running like in the above stated bug, where the player scores 20 points. 
 - The operators didn't reset when game was finished.   
