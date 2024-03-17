@@ -183,6 +183,7 @@ body {
     color: white;
 }
 
+/* Changing the color of the submit button from red to green before game is active  - credits to my mentor Antonio */
 .button-disabled {
     background-color: red;
     cursor: not-allowed;
