@@ -164,9 +164,9 @@ The following feedback message will be displayed when the user submits the incor
 
 ## Testing
 
-- [Responsinator - link](http://www.responsinator.com/?url=https%3A%2F%2F8000-dym077-numbersgame1-mdgu2qm29xj.ws-eu107.gitpod.io%2F)
+- [Responsinator - link](http://www.responsinator.com/?url=https%3A%2F%2Fdym077.github.io%2Fnumbers-game%2F)
 
-- [Am I Responsive - link](https://ui.dev/amiresponsive?url=https://8000-dym077-numbersgame1-mdgu2qm29xj.ws-eu107.gitpod.io/)
+- [Am I Responsive - link](https://ui.dev/amiresponsive?url=https://dym077.github.io/numbers-game/)
 
 ### Validator Testing
 
