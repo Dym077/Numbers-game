@@ -230,8 +230,11 @@ The following feedback message will be displayed when the user submits the incor
   
 ### Accessibility
 
-- The site has achieved a Lighthouse accessibility and best practices score of 100% on both desktop and mobile devices.
+- The site has achieved a Lighthouse accessibility, performance and best practices score of 100% on desktop devices.
+It has an overall Lighthouse score of 100% on desktop devices.
 ![Lighthouse -desktop](documentation/lighthouse.png)
+- The site has achieved a Lighthouse accessibility and best practices score of 100% and performance of 95% on mobile devices.
+It has an overall Lighthouse score of 95% on mobile devices.
 ![Lighthouse -mobile](documentation/lighthouse_mobile.png)
 
 ### Input Testing
