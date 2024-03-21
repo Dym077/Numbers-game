@@ -1,6 +1,8 @@
 <h1 align="center">Numbers World</h1>
 <h2 align="center">A web based maths game which tests the players basic knowledge</h2>
-Numbers World is a simple and easy-to-play web based game which allows the players to test their basic knowledge of the subject of maths, choosing between the four calculation methods. The game is a great way to test your math skills on the go, either by the computer, on your phone or on a tablet. You can find the deployed version here: (https://dym077.github.io/numbers-game/)
+Numbers World is a simple and easy-to-play web based game which allows the players to test their basic knowledge of the subject of maths, choosing between the four calculation methods. The game is a great way to test your math skills on the go, either by the computer, on your phone or on a tablet. You can find the deployed version here 
+
+- [Numbers World - link](https://dym077.github.io/numbers-game/)
 
 ![Am I Responsive](documentation/number_game_amiresponsive.png)
 
@@ -33,7 +35,7 @@ Numbers World is a simple and easy-to-play web based game which allows the playe
 ![user name input](documentation/user_name_input.png)
 When inputting a name of choice, the feedback will tell the player to choose a calculation method. When the player clicks on one of these methods, the game will begin. The timer will start and a random math problem will be generated.
 ![game start](documentation/game_start.png)
-The user can submit the solution in the answer box, then click the submit button or hit "enter" and will get feedback from the game accordingly. If the user has submitted the correct answer, the feedback will read "You submitted the correct answer, Player" If the user should submit an incorrect answer, the feedback will then read for example "Your answer is 24, Player The correct answer should be 25". The feedback will be visible for three seconds and then the next question will be displayed.
+The user can submit the solution in the answer box, then click the submit button or hit "enter" and will get feedback from the game accordingly. If the user has submitted the correct answer, the feedback will read "You submitted the correct answer, Player" If the user should submit an incorrect answer, the feedback will then read for example "Your answer is 24, Player. The correct answer should be 25". The feedback will be visible for three seconds and then the next question will be displayed.
 
 
 ### Instructions
@@ -43,9 +45,9 @@ The user can submit the solution in the answer box, then click the submit button
 
 ### Game Over - You win/ lose
 
-- When the player has scored 20 correct answers, the game will declare "Congratulations! You reached 20 points Player!"
+- When the player has scored 20 correct answers, the game will declare "Congratulations! You reached 20 points, Player!"
 ![Congratulations](documentation/congratulations.png)
-After that, the game will reset and the player can play another game, choosing another calculation method. If the player should get 20 incorrect answers, before scoring 20 correct answers, the game will instead declare "You lost, Player! Better luck next time!"
+After that, the game will reset and the player can play a new game, choosing another calculation method. If the player should get 20 incorrect answers, before scoring 20 correct answers, the game will instead declare "You lost, Player! Better luck next time!"
 ![You lost](documentation/you_lost.png)
 
 ### Time up
